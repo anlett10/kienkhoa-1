@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navigation-height: 4.8rem;
+    --container-size: 1200px;
+  }
+
+  html {
+    @apply bg-background font-sans text-off-white;
+    font-size: 62.5%;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: rgb(0 0 0 / 56%) 0px 3px 12px;
+  }
+
+  .slide-center {
+    transform: translateX(
+      calc(
+        max(var(--container-size), 100vw) / 2 - calc(var(--container-size) / 2)
+      )
+    );
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      to right bottom,
+      rgb(255, 255, 255) 30%,
+      rgba(255, 255, 255, 0.38)
+    );
+    background-clip: text;
+    color: transparent;
+  }
+}
