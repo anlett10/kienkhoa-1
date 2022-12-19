@@ -11,7 +11,7 @@ interface HeroElementProps {
 
 export const HeroTitle = ({ children, className }: HeroElementProps) => {
   return (
-    <h1 className={clsx("text-gradient my-6 text-6xl md:text-8xl", className)}>
+    <h1 className={clsx("my-10 text-6xl md:text-8xl", className)}>
       {children}
     </h1>
   );

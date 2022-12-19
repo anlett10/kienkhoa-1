@@ -10,48 +10,30 @@ export default function Tabs() {
       {
         id: 1,
         title: "Công nghệ web giúp chúng ta giao tiếp làm việc tốt hơn",
-        date: "5h ago",
-        commentCount: 5,
-        shareCount: 2,
       },
       {
         id: 2,
         title: "Mô hình ứng dụng của khách hàng cơ bản là khác nhau",
-        date: "2h ago",
-        commentCount: 3,
-        shareCount: 2,
       },
     ],
     "Lĩnh vực hướng đến": [
       {
         id: 1,
         title: "Is tech making coffee better or worse?",
-        date: "Jan 7",
-        commentCount: 29,
-        shareCount: 16,
       },
       {
         id: 2,
         title: "The most innovative things happening in coffee",
-        date: "Mar 19",
-        commentCount: 24,
-        shareCount: 12,
       },
     ],
     "Thị trường": [
       {
         id: 1,
         title: "Ask Me Anything: 10 answers to your questions about coffee",
-        date: "2d ago",
-        commentCount: 9,
-        shareCount: 5,
       },
       {
         id: 2,
         title: "The worst advice we've ever heard about coffee",
-        date: "4d ago",
-        commentCount: 1,
-        shareCount: 2,
       },
     ],
   });
@@ -95,15 +77,6 @@ export default function Tabs() {
                     <h3 className="text-sm font-medium leading-5 text-gray-700">
                       {post.title}
                     </h3>
-
-                    <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
-                      <li>{post.date}</li>
-                      <li>&middot;</li>
-                      <li>{post.commentCount} comments</li>
-                      <li>&middot;</li>
-                      <li>{post.shareCount} shares</li>
-                    </ul>
-
                     <a
                       href="#"
                       className={clsx(
