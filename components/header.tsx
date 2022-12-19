@@ -43,7 +43,7 @@ export const Header = () => {
         >
           <nav
             className={clsx(
-              "fixed top-navigation-height left-0 h-[calc(100vh_-_var(--navigation-height))] w-full overflow-auto bg-background transition-opacity duration-500 md:relative md:top-0 md:block md:h-auto md:w-auto md:translate-x-0 md:overflow-hidden md:bg-transparent md:opacity-100 md:transition-none",
+              "fixed top-navigation-height left-0 h-[calc(100vh_-_var(--navigation-height))] w-1/2 overflow-auto bg-background transition-opacity duration-500 md:relative md:top-0 md:block md:h-auto md:w-auto md:translate-x-0 md:overflow-hidden md:bg-transparent md:opacity-100 md:transition-none",
               hamburgerMenuIsOpen
                 ? "translate-x-0 opacity-100"
                 : "translate-x-[-100vw] opacity-0"
@@ -73,10 +73,8 @@ export const Header = () => {
         </div>
 
         <div className="ml-auto flex h-full items-center">
-          <p className="mr-6 text-sm">Lên lịch {">"}</p>
-          <ExButton href="https://cal.com/anlett10/30min">
-            cal.com/kienkhoa
-          </ExButton>
+          <p className="mr-6 text-sm">Book {">"}</p>
+          <ExButton href="https://cal.com/anlett10/30min">kienkhoa</ExButton>
         </div>
 
         <button
