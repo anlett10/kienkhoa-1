@@ -7,7 +7,7 @@ export default function About() {
     // <div className="overflow-hidden border-gray-300 bg-slate-500 shadow sm:rounded-lg">
     <div className="rounded-xl border-gray-300 lg:rounded-2xl lg:border lg:p-7">
       <div className="px-4 pb-12 pt-6 sm:px-6">
-        <h3 className="pb-6 text-2xl font-medium leading-6 md:pb-6 md:text-lg lg:pb-6">
+        <h3 className="pb-6 text-lg font-medium leading-6">
           Về nhóm Kiến Khoa
         </h3>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -16,7 +16,7 @@ export default function About() {
         </div>
       </div>
       <div className="px-4 pb-12 sm:px-6">
-        <h3 className="pb-6 text-2xl font-medium leading-6 md:pb-6 md:text-lg lg:pb-6">
+        <h3 className="pb-6 text-lg font-medium leading-6">
           Câu hỏi thông thường
         </h3>
         <Accordion />
