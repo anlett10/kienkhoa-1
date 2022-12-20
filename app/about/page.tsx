@@ -5,8 +5,8 @@ import ActionTabs from "./ActionTabs";
 export default function About() {
   return (
     // <div className="overflow-hidden border-gray-300 bg-slate-500 shadow sm:rounded-lg">
-    <div className="mb-6 rounded-xl border-gray-300 lg:rounded-2xl lg:border lg:p-7">
-      <div className="px-4 pb-12 sm:px-6">
+    <div className="rounded-xl border-gray-300 lg:rounded-2xl lg:border lg:p-7">
+      <div className="px-4 pb-12 pt-6 sm:px-6">
         <h3 className="pb-6 text-2xl font-medium leading-6 md:pb-6 md:text-lg lg:pb-6">
           Về nhóm Kiến Khoa
         </h3>
@@ -29,8 +29,8 @@ export default function About() {
       </div>
       <div className="border-gray-200 px-6">
         <dl>
-          <div className="rounded-t-2xl bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-            <dt className="text-sm font-medium text-gray-500">
+          <div className="rounded-t-2xl bg-gray-100 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-gray-700">
               Thiết kế websites
             </dt>
             <dd className="mt-1 text-sm text-gray-1000 sm:col-span-2 sm:mt-0">
@@ -38,15 +38,15 @@ export default function About() {
             </dd>
           </div>
           <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-            <dt className="text-sm font-medium text-gray-500">
+            <dt className="text-sm font-medium text-gray-700">
               Ứng dụng web cỡ nhỏ
             </dt>
             <dd className="mt-1 text-sm text-gray-1000 sm:col-span-2 sm:mt-0">
               50M - 200M VND
             </dd>
           </div>
-          <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-            <dt className="text-sm font-medium text-gray-500">
+          <div className="bg-gray-100 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-gray-700">
               Ứng dụng web cỡ vừa
             </dt>
             <dd className="mt-1 text-sm text-gray-1000 sm:col-span-2 sm:mt-0">
@@ -54,15 +54,15 @@ export default function About() {
             </dd>
           </div>
           <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-            <dt className="text-sm font-medium text-gray-500">
+            <dt className="text-sm font-medium text-gray-700">
               Ứng dụng mobile cỡ nhỏ
             </dt>
             <dd className="mt-1 text-sm text-gray-1000 sm:col-span-2 sm:mt-0">
               100M - 300M VND
             </dd>
           </div>
-          <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-            <dt className="text-sm font-medium text-gray-500">
+          <div className="bg-gray-100 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-gray-700">
               Ứng dụng mobile cỡ vừa
             </dt>
             <dd className="mt-1 text-sm text-gray-1000 sm:col-span-2 sm:mt-0">
@@ -70,7 +70,7 @@ export default function About() {
             </dd>
           </div>
           <div className="rounded-b-2xl bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-            <dt className="text-sm font-medium text-gray-500">
+            <dt className="text-sm font-medium text-gray-700">
               Phần mềm hệ thống quản lý Doanh nghiệp{" "}
             </dt>
             <dd className="mt-1 text-sm text-gray-1000 sm:col-span-2 sm:mt-0">

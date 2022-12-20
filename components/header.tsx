@@ -73,7 +73,7 @@ export const Header = () => {
         </div>
 
         <div className="ml-auto flex h-full items-center">
-          <p className="mr-3 text-sm">Book</p>
+          <p className="mr-2 text-sm">Book</p>
           <ExButton href="https://cal.com/anlett10/30min">kienkhoa</ExButton>
         </div>
 

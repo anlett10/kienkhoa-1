@@ -6,34 +6,36 @@ import clsx from "clsx";
 
 export default function ActionTabs() {
   let [categories] = useState({
-    "Nhóm Kiến Khoa": [
+    "Nhóm kỹ thuật": [
       {
         id: 1,
-        title: "Tập hợp nhiều coders kinh nghiệm, kỹ năng tốt",
+        title: "- Tập hợp nhiều coders kinh nghiệm, kỹ năng tốt",
       },
       {
         id: 2,
-        title: "Mô hình ứng dụng của khách hàng cơ bản là khác nhau",
+        title: "- Làm việc nhóm hoàn thành tốt nhất mục tiêu của khách hàng",
       },
     ],
-    "Công cụ phát triển": [
+    "Công nghệ web": [
       {
         id: 1,
-        title: "Is tech making coffee better or worse?",
+        title:
+          "- Typescript, React/NextJS, TailwindCSS, SQL, React Native/Swift",
       },
       {
         id: 2,
-        title: "The most innovative things happening in coffee",
+        title: "- Vercel, Azure, AWS, Google Cloud",
       },
     ],
     "Dịch vụ - SP": [
       {
         id: 1,
-        title: "Ask Me Anything: 10 answers to your questions about coffee",
+        title:
+          "- Gia công phần mềm: phát triển, nâng cấp, phát hành tính năng mới",
       },
       {
         id: 2,
-        title: "The worst advice we've ever heard about coffee",
+        title: "- Phần mềm CRM tốt nhất cho DN vừa và nhỏ",
       },
     ],
   });
@@ -48,7 +50,7 @@ export default function ActionTabs() {
               className={({ selected }) =>
                 clsx(
                   "w-full rounded-lg py-2.5 text-sm font-medium leading-5",
-                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
+                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-500 focus:outline-none focus:ring-2",
                   selected
                     ? "bg-white text-gray-1000 shadow"
                     : "hover:bg-white/[0.12] hover:text-gray-1000"
@@ -64,15 +66,15 @@ export default function ActionTabs() {
             <Tab.Panel
               key={idx}
               className={clsx(
-                "rounded-xl bg-gray-300 p-3",
-                "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+                "rounded-xl bg-gray-100 p-3",
+                "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-500 focus:outline-none focus:ring-2"
               )}
             >
               <ul>
                 {posts.map((post) => (
                   <li
                     key={post.id}
-                    className="relative rounded-md p-3 hover:bg-gray-100"
+                    className="relative rounded-md p-3 hover:bg-gray-400"
                   >
                     <h3 className="text-sm font-medium leading-5 text-gray-700">
                       {post.title}

@@ -6,34 +6,37 @@ import clsx from "clsx";
 
 export default function Tabs() {
   let [categories] = useState({
-    "Góc nhìn": [
+    "Tổng quan": [
       {
         id: 1,
-        title: "Công nghệ web giúp chúng ta giao tiếp làm việc tốt hơn",
+        title:
+          "- Công nghệ web giúp Doanh nghiệp quản lý, vận hành, truyền thông tốt hơn",
       },
       {
         id: 2,
-        title: "Mô hình ứng dụng của khách hàng cơ bản là khác nhau",
+        title:
+          "- Mục tiêu đưa công nghệ phát triển web vào ứng dụng thực tế tại VN",
       },
     ],
-    "Lĩnh vực hướng đến": [
+    "Dịch vụ": [
       {
         id: 1,
-        title: "Is tech making coffee better or worse?",
+        title: "- Phát triển ứng dụng cho tổ chức, DN trên nền tảng web",
       },
       {
         id: 2,
-        title: "The most innovative things happening in coffee",
+        title: "- Thiết kế websites chuyên nghiệp cho khách hàng cá nhân và DN",
       },
     ],
-    "Thị trường": [
+    "Thị trường - KH": [
       {
         id: 1,
-        title: "Ask Me Anything: 10 answers to your questions about coffee",
+        title: "- Hỗ trợ khách hàng phát triển kinh doanh tại Việt Nam",
       },
       {
         id: 2,
-        title: "The worst advice we've ever heard about coffee",
+        title:
+          "- Khách hàng có yêu cầu đặt hàng gia công hoàn thiện ứng dụng web mobile",
       },
     ],
   });
@@ -48,7 +51,7 @@ export default function Tabs() {
               className={({ selected }) =>
                 clsx(
                   "w-full rounded-lg py-2.5 text-sm font-medium leading-5",
-                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
+                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-500 focus:outline-none focus:ring-2",
                   selected
                     ? "bg-white text-gray-1000 shadow"
                     : "hover:bg-white/[0.12] hover:text-gray-1000"
@@ -64,15 +67,15 @@ export default function Tabs() {
             <Tab.Panel
               key={idx}
               className={clsx(
-                "rounded-xl bg-gray-300 p-3",
-                "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+                "rounded-xl bg-gray-100 p-3",
+                "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-500 focus:outline-none focus:ring-2"
               )}
             >
               <ul>
                 {posts.map((post) => (
                   <li
                     key={post.id}
-                    className="relative rounded-md p-3 hover:bg-gray-100"
+                    className="relative rounded-md p-3 hover:bg-gray-400"
                   >
                     <h3 className="text-sm font-medium leading-5 text-gray-700">
                       {post.title}
