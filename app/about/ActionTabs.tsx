@@ -6,7 +6,7 @@ import clsx from "clsx";
 
 export default function ActionTabs() {
   let [categories] = useState({
-    "Nhóm kỹ thuật": [
+    "Đội nhóm": [
       {
         id: 1,
         title: "- Tập hợp nhiều coders kinh nghiệm, kỹ năng tốt",
@@ -16,7 +16,7 @@ export default function ActionTabs() {
         title: "- Làm việc nhóm hoàn thành tốt nhất mục tiêu của khách hàng",
       },
     ],
-    "Công nghệ web": [
+    "Công nghệ": [
       {
         id: 1,
         title:
@@ -27,7 +27,7 @@ export default function ActionTabs() {
         title: "- Vercel, Azure, AWS, Google Cloud",
       },
     ],
-    "Dịch vụ - SP": [
+    "Dịch vụ": [
       {
         id: 1,
         title:
@@ -35,7 +35,7 @@ export default function ActionTabs() {
       },
       {
         id: 2,
-        title: "- Phần mềm CRM tốt nhất cho DN vừa và nhỏ",
+        title: "- Thiết kế websites chuyên nghiệp cho khách hàng cá nhân và DN",
       },
     ],
   });

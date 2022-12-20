@@ -10,25 +10,26 @@ export default function Tabs() {
       {
         id: 1,
         title:
-          "- Công nghệ web giúp Doanh nghiệp quản lý, vận hành, truyền thông tốt hơn",
+          "- Công nghệ làm thay đổi cách chúng ta giao tiếp, học hành, làm việc",
       },
       {
         id: 2,
         title:
-          "- Mục tiêu đưa công nghệ phát triển web vào ứng dụng thực tế tại VN",
+          "- Các ứng dụng web giúp Doanh nghiệp quản lý, vận hành, truyền thông tốt hơn ",
       },
     ],
-    "Dịch vụ": [
+    "Mục tiêu": [
       {
         id: 1,
-        title: "- Phát triển ứng dụng cho tổ chức, DN trên nền tảng web",
+        title: "- Đưa công nghệ phát triển web vào ứng dụng thực tế tại VN",
       },
       {
         id: 2,
-        title: "- Thiết kế websites chuyên nghiệp cho khách hàng cá nhân và DN",
+        title:
+          "- Phát triển tốt hơn các ứng dụng web hiện tại, thử nghiệm mô hình ứng dụng mới",
       },
     ],
-    "Thị trường - KH": [
+    "Thị trường": [
       {
         id: 1,
         title: "- Hỗ trợ khách hàng phát triển kinh doanh tại Việt Nam",
@@ -36,7 +37,7 @@ export default function Tabs() {
       {
         id: 2,
         title:
-          "- Khách hàng có yêu cầu đặt hàng gia công hoàn thiện ứng dụng web mobile",
+          "- Doanh nghiệp có yêu cầu đặt hàng, gia công hoàn thiện ứng dụng web mobile",
       },
     ],
   });
