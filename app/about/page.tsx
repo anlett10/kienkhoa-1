@@ -22,7 +22,9 @@ export default function About() {
         <Accordion />
       </div>
       <div className="px-4 pb-6 sm:px-6">
-        <h3 className="text-lg font-medium leading-6">Thông tin giá dịch vụ</h3>
+        <h3 className="text-lg font-medium leading-6 md:text-lg">
+          Thông tin giá dịch vụ
+        </h3>
         <p className="mt-1 max-w-2xl text-sm">
           Dự tính chi phí cơ bản của một số gói dịch vụ
         </p>
