@@ -1,6 +1,6 @@
-import { ProductDeal } from '#/ui/ProductDeal';
-import { add, formatDistanceToNow } from 'date-fns';
-import { type Dinero } from 'dinero.js';
+import { ProductDeal } from "#/ui/ProductDeal";
+import { add, formatDistanceToNow } from "date-fns";
+import { type Dinero } from "dinero.js";
 
 export const ProductLighteningDeal = ({
   price,
@@ -18,7 +18,7 @@ export const ProductLighteningDeal = ({
     <>
       <div className="flex">
         <div className="rounded bg-vercel-pink px-1 text-xs text-pink-100">
-          Expires in {formatDistanceToNow(date)}
+          Hết hạn sau {formatDistanceToNow(date)}
         </div>
       </div>
 

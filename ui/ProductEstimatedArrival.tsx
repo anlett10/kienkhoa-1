@@ -1,4 +1,4 @@
-import { add, format, isTomorrow } from 'date-fns';
+import { add, format, isTomorrow } from "date-fns";
 
 export const ProductEstimatedArrival = ({
   leadTime,
@@ -13,12 +13,12 @@ export const ProductEstimatedArrival = ({
 
   return (
     <div className="text-sm text-gray-300">
-      Get it{' '}
+      Đặt hàng{" "}
       <strong className="font-bold text-gray-100">
-        {isTomorrow(date) ? 'tomorrow, ' : null}
-        {format(date, 'MMM d')}
+        {isTomorrow(date) ? "tomorrow, " : null}
+        {format(date, "MMM d")}
       </strong>
-      {hasDeliveryTime ? <> by 5pm</> : null}
+      {hasDeliveryTime ? <> trước 5pm</> : null}
     </div>
   );
 };
