@@ -21,7 +21,7 @@ const data = [
   {
     icon: PhoneIcon,
     name: "Phone",
-    description: "0918888888",
+    description: "0988888888",
   },
 ];
 

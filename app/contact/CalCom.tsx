@@ -47,7 +47,7 @@ const CalCom = () => {
           </div>
         </div>
       ))}
-      <ExternalLink href="https://cal.com/anlett10/30min">
+      <ExternalLink href="https://cal.com/kienkhoa/30min">
         <img src={mapImage} alt={"text-map"} className="rounded-md" />
       </ExternalLink>
     </div>
