@@ -6,11 +6,11 @@ export default async function Page() {
   return (
     <div className="space-y-8">
       <div className="space-y-4">
-        <h1 className="text-xl font-medium">Websites đã được thiết kế</h1>
+        <h1 className="text-xl font-medium">Mẫu website bán hàng</h1>
         <div className="space-y-4">
           <ul className="list-disc space-y-2 pl-4 text-sm text-gray-300">
-            <li>Bộ sưu tập các websites đã được xây dựng tại Kiến Khoa</li>
-            <li>Các websites tiêu biểu và chi tiết thực hiện</li>
+            <li>Bộ sưu tập các mẫu hàng</li>
+            <li>Danh mục hàng đang khuyến mãi</li>
           </ul>
         </div>
         <Slider />

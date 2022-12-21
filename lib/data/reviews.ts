@@ -1,20 +1,20 @@
 const reviews = [
   {
     id: '1',
-    name: 'Nullam Duis',
-    rating: 4,
-    text: 'Phasellus efficitur, nisi ut varius ultricies, tortor arcu ullamcorper nisi, eu auctor enim est ut enim. Sed fringilla, nulla ut tincidunt hendrerit, risus tortor laoreet tortor, non mattis arcu elit vel ante.',
+    name: 'Minh Ng',
+    rating: 5,
+    text: 'Hàng chất lương, giá cả cạnh tranh với dịch vụ tốt nhất 5 sao',
   },
   {
     id: '2',
     name: 'Donec Nulla Velit',
-    rating: 1,
+    rating: 3,
     text: 'Nullam fermentum nisl non mattis fringilla!!!!',
   },
   {
     id: '3',
     name: 'J Tempus',
-    rating: 3,
+    rating: 4,
     text: 'Pellentesque faucibus quam eu vehicula pulvinar. Integer cursus fringilla metus.',
   },
 ];

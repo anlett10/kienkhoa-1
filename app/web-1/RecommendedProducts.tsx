@@ -45,10 +45,10 @@ export async function RecommendedProducts({ id }: { id: string }) {
     <div className="space-y-6">
       <div>
         <div className="text-lg font-medium text-white">
-          Recommended Products for You
+          Sản phẩm tương tự cho bạn
         </div>
         <div className="text-sm text-gray-400">
-          Based on your preferences and shopping habits
+          Dựa trên thói quen tìm hiểu mua sắm
         </div>
       </div>
       <div className="grid grid-cols-4 gap-6">
