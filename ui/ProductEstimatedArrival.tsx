@@ -15,7 +15,7 @@ export const ProductEstimatedArrival = ({
     <div className="text-sm text-gray-300">
       Đặt hàng{" "}
       <strong className="font-bold text-gray-100">
-        {isTomorrow(date) ? "tomorrow, " : null}
+        {isTomorrow(date) ? "ngày mai, " : null}
         {format(date, "MMM d")}
       </strong>
       {hasDeliveryTime ? <> trước 5pm</> : null}

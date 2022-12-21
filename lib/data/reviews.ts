@@ -7,15 +7,15 @@ const reviews = [
   },
   {
     id: '2',
-    name: 'Donec Nulla Velit',
+    name: 'Ngọc Minh',
     rating: 3,
-    text: 'Nullam fermentum nisl non mattis fringilla!!!!',
+    text: 'Hàng đỉnh nhưng giá chưa phải tốt nhất',
   },
   {
     id: '3',
-    name: 'J Tempus',
+    name: 'Peter H.',
     rating: 4,
-    text: 'Pellentesque faucibus quam eu vehicula pulvinar. Integer cursus fringilla metus.',
+    text: 'Good services, will visit again!',
   },
 ];
 

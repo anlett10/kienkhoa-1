@@ -121,7 +121,7 @@ function Slider() {
   return (
     <div className="min-h-screen bg-gray-200 py-16 font-sans">
       <h2 className="mx-auto mb-20 max-w-[800px] text-center text-6xl font-semibold text-gray-1000">
-        A magical connection to your devices.
+        Bộ sưu tập sản phẩm thiết bị và phần mềm của Apple.
       </h2>
 
       <div className="h-[500px] overflow-hidden">
