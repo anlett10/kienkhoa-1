@@ -9,33 +9,33 @@ export default function ActionTabs() {
     "Đội nhóm": [
       {
         id: 1,
-        title: "- Tập hợp nhiều coders kinh nghiệm, kỹ năng tốt",
+        title: "# Tập hợp nhiều coders kinh nghiệm, kỹ năng tốt",
       },
       {
         id: 2,
-        title: "- Làm việc nhóm hoàn thành tốt nhất mục tiêu của khách hàng",
+        title: "# Làm việc nhóm hoàn thành tốt nhất mục tiêu của khách hàng",
       },
     ],
     "Công nghệ": [
       {
         id: 1,
         title:
-          "- Typescript, React/NextJS, TailwindCSS, SQL, React Native/Swift",
+          "# Typescript, React/NextJS, TailwindCSS, SQL, React Native/Swift",
       },
       {
         id: 2,
-        title: "- Vercel, Azure, AWS, Google Cloud",
+        title: "# Vercel, Azure, AWS, Google Cloud",
       },
     ],
     "Dịch vụ": [
       {
         id: 1,
         title:
-          "- Gia công phần mềm: phát triển, nâng cấp, phát hành tính năng mới",
+          "# Gia công phần mềm: phát triển, nâng cấp, phát hành tính năng mới",
       },
       {
         id: 2,
-        title: "- Thiết kế websites chuyên nghiệp cho khách hàng cá nhân và DN",
+        title: "# Thiết kế websites chuyên nghiệp cho khách hàng cá nhân và DN",
       },
     ],
   });

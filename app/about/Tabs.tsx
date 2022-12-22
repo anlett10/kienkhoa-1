@@ -10,34 +10,34 @@ export default function Tabs() {
       {
         id: 1,
         title:
-          "- Công nghệ làm thay đổi cách chúng ta giao tiếp, học hành, làm việc",
+          "# Công nghệ làm thay đổi cách chúng ta giao tiếp, học hành, làm việc",
       },
       {
         id: 2,
         title:
-          "- Các ứng dụng web giúp Doanh nghiệp quản lý, vận hành, truyền thông tốt hơn ",
+          "# Các ứng dụng web giúp Doanh nghiệp quản lý, vận hành, truyền thông tốt hơn ",
       },
     ],
     "Mục tiêu": [
       {
         id: 1,
-        title: "- Đưa công nghệ phát triển web vào ứng dụng thực tế tại VN",
+        title: "# Đưa công nghệ phát triển web vào ứng dụng thực tế tại VN",
       },
       {
         id: 2,
         title:
-          "- Phát triển tốt hơn các ứng dụng web hiện tại, thử nghiệm mô hình ứng dụng mới",
+          "# Phát triển tốt hơn các ứng dụng web hiện tại, thử nghiệm mô hình ứng dụng mới",
       },
     ],
     "Thị trường": [
       {
         id: 1,
-        title: "- Hỗ trợ khách hàng phát triển kinh doanh tại Việt Nam",
+        title: "# Hỗ trợ khách hàng phát triển kinh doanh tại Việt Nam",
       },
       {
         id: 2,
         title:
-          "- Doanh nghiệp có yêu cầu đặt hàng, gia công hoàn thiện ứng dụng web mobile",
+          "# Doanh nghiệp có yêu cầu đặt hàng, gia công hoàn thiện ứng dụng web mobile",
       },
     ],
   });

@@ -6,7 +6,7 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
-const mapImage = "/all/map-image.jpg";
+const mapImage = "/all/map-image.png";
 const data = [
   {
     icon: MapPinIcon,
@@ -20,8 +20,8 @@ const data = [
   },
   {
     icon: PhoneIcon,
-    name: "Phone",
-    description: "0988888888",
+    name: "Mobile/Zalo",
+    description: "0867793496",
   },
 ];
 
