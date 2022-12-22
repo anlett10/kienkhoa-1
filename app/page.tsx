@@ -46,6 +46,16 @@ export default function Homepage() {
             Sử dụng các công cụ, giải pháp được thiết kế tối ưu cho việc quản lý
             vận hành của Doanh nghiệp
           </p>
+          <div className="mt-8 flex gap-x-4 sm:justify-center">
+            <Button
+              className="translate-y-[-1rem] animate-fade-in opacity-0"
+              href="/web-1"
+              variant="secondary"
+              size="medium"
+            >
+              Demo website quản lý bán hàng <IconWrapper>→</IconWrapper>
+            </Button>
+          </div>
         </header>
         <div className="grid grid-cols-1 gap-y-20 md:grid-cols-2 md:gap-x-12 md:gap-y-12">
           {features.map((feature) => (
@@ -66,16 +76,6 @@ export default function Homepage() {
               </div>
             </div>
           ))}
-        </div>
-        <div className="mt-8 flex gap-x-4 sm:justify-center">
-          <Button
-            className="translate-y-[-1rem] animate-fade-in opacity-0"
-            href="/web-1"
-            variant="secondary"
-            size="small"
-          >
-            Demo website quản lý bán hàng <IconWrapper>→</IconWrapper>
-          </Button>
         </div>
       </Container>
     </div>
