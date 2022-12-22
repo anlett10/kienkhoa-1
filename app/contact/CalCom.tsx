@@ -37,11 +37,11 @@ const CalCom = () => {
           className="relative flex flex-col gap-6 pb-7 sm:flex-row md:flex-col lg:flex-row"
         >
           <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500 text-white sm:shrink-0">
-            <info.icon className="h-8 w-8" aria-hidden="true" />
+            <info.icon className="h-5 w-5" aria-hidden="true" />
           </div>
           <div className="sm:min-w-0 sm:flex-1">
-            <p className="text-lg font-semibold leading-8">{info.name}</p>
-            <p className="mt-2 text-md leading-7 text-primary-text">
+            <p className="text-sm font-semibold leading-8">{info.name}</p>
+            <p className="mt-2 text-sm leading-7 text-primary-text">
               {info.description}
             </p>
           </div>
