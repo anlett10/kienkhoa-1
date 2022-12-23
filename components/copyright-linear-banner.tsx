@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
-import { Button } from "./button";
+import { Button, ExButton } from "./button";
 
 const cookieBannerName = "copyright-banner-dismissed";
 
@@ -24,16 +24,16 @@ export const CopyrightLinearBanner = () => {
   if (!isCookieBannerVisible) return null;
 
   return (
-    <div className="fixed right-[4rem] bottom-[4rem] flex w-[65rem] max-w-[95%] items-start rounded-md border border-transparent-white p-8 text-[2rem] backdrop-blur-[12px]">
+    <div className="fixed right-[4rem] bottom-[4rem] flex w-[50rem] max-w-[95%] items-start rounded-md border border-transparent-white p-8 text-[1.5rem] backdrop-blur-[12px]">
       <div className="space-y-3">
         <p>
-          <strong>Chú ý:</strong> Để xem trang tiếng Anh, vui lòng truy cập link
-          bên dưới
+          <strong>Chú ý:</strong> Để xem trang tiếng Anh, xin vui lòng truy cập
+          link bên dưới
         </p>
         <p>
-          <Button href="https://wbookapp.com" size="large" target="_blank">
-            Visit the website
-          </Button>
+          <ExButton href="https://wbookapp.com" size="medium">
+            https://wbookapp.com
+          </ExButton>
         </p>
       </div>
       <button className="ml-8" onClick={dismissCookie}>
