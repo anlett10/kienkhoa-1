@@ -34,14 +34,14 @@ const CalCom = () => {
       {data.map((info) => (
         <div
           key={info.name}
-          className="relative flex flex-col gap-6 pb-7 sm:flex-row md:flex-col lg:flex-row"
+          className="relative flex flex-col gap-4 pb-7 sm:flex-row md:flex-col lg:flex-row"
         >
-          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500 text-white sm:shrink-0">
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-500 text-white sm:shrink-0">
             <info.icon className="h-5 w-5" aria-hidden="true" />
           </div>
           <div className="sm:min-w-0 sm:flex-1">
             <p className="text-sm font-semibold leading-8">{info.name}</p>
-            <p className="mt-2 text-sm leading-7 text-primary-text">
+            <p className="text-sm leading-7 text-primary-text">
               {info.description}
             </p>
           </div>
