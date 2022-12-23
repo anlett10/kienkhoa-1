@@ -74,7 +74,12 @@ export const Header = () => {
 
         <div className="ml-auto flex h-full items-center">
           {/* <p className="mr-2 text-sm">Book</p> */}
-          <ExButton href="https://cal.com/kienkhoa/30min">
+          <ExButton
+            href="https://cal.com/kienkhoa/30min"
+            className="translate-y-[-1rem] animate-fade-in opacity-0"
+            variant="secondary"
+            size="medium"
+          >
             Contact us <IconWrapper>→</IconWrapper>
           </ExButton>
         </div>
