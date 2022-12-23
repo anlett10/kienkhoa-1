@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { ExButton } from "./button";
+import { ExButton, IconWrapper } from "./button";
 import { Container } from "./container";
 import { HamburgerIcon } from "./icons/hamburger";
 import { Logo } from "./icons/logo";
@@ -73,8 +73,10 @@ export const Header = () => {
         </div>
 
         <div className="ml-auto flex h-full items-center">
-          <p className="mr-2 text-sm">Book</p>
-          <ExButton href="https://cal.com/kienkhoa/30min">kienkhoa</ExButton>
+          {/* <p className="mr-2 text-sm">Book</p> */}
+          <ExButton href="https://cal.com/kienkhoa/30min">
+            Contact us <IconWrapper>→</IconWrapper>
+          </ExButton>
         </div>
 
         <button
