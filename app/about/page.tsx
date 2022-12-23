@@ -32,50 +32,50 @@ export default function About() {
       <div className="border-gray-200 px-6">
         <dl>
           <div className="rounded-t-2xl bg-gray-100 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-            <dt className="text-sm font-medium text-gray-700">
+            <dt className="font-small text-sm text-gray-700">
               Thiết kế websites
             </dt>
-            <dd className="mt-1 text-sm text-gray-1000 sm:col-span-2 sm:mt-0">
-              Từ 10M - 100M VND
+            <dd className="mt-1 text-sm text-gray-700 sm:col-span-2 sm:mt-0">
+              Từ 15M VND
             </dd>
           </div>
           <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-            <dt className="text-sm font-medium text-gray-700">
+            <dt className="font-small text-sm text-gray-700">
               Ứng dụng web cỡ nhỏ
             </dt>
-            <dd className="mt-1 text-sm text-gray-1000 sm:col-span-2 sm:mt-0">
-              50M - 200M VND
+            <dd className="mt-1 text-sm text-gray-700 sm:col-span-2 sm:mt-0">
+              Từ 50M VND
             </dd>
           </div>
           <div className="bg-gray-100 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-            <dt className="text-sm font-medium text-gray-700">
+            <dt className="font-small text-sm text-gray-700">
               Ứng dụng web cỡ vừa
             </dt>
-            <dd className="mt-1 text-sm text-gray-1000 sm:col-span-2 sm:mt-0">
-              250M - 2000M VND
+            <dd className="mt-1 text-sm text-gray-700 sm:col-span-2 sm:mt-0">
+              Từ 200M VND
             </dd>
           </div>
           <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-            <dt className="text-sm font-medium text-gray-700">
+            <dt className="font-small text-sm text-gray-700">
               Ứng dụng mobile cỡ nhỏ
             </dt>
-            <dd className="mt-1 text-sm text-gray-1000 sm:col-span-2 sm:mt-0">
-              100M - 300M VND
+            <dd className="mt-1 text-sm text-gray-700 sm:col-span-2 sm:mt-0">
+              Từ 100M VND
             </dd>
           </div>
           <div className="bg-gray-100 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-            <dt className="text-sm font-medium text-gray-700">
+            <dt className="font-small text-sm text-gray-700">
               Ứng dụng mobile cỡ vừa
             </dt>
-            <dd className="mt-1 text-sm text-gray-1000 sm:col-span-2 sm:mt-0">
-              300M - 3000M VND
+            <dd className="mt-1 text-sm text-gray-700 sm:col-span-2 sm:mt-0">
+              Từ 300M VND
             </dd>
           </div>
           <div className="rounded-b-2xl bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-            <dt className="text-sm font-medium text-gray-700">
+            <dt className="font-small text-sm text-gray-700">
               Phần mềm hệ thống quản lý Doanh nghiệp{" "}
             </dt>
-            <dd className="mt-1 text-sm text-gray-1000 sm:col-span-2 sm:mt-0">
+            <dd className="mt-1 text-sm text-gray-700 sm:col-span-2 sm:mt-0">
               <ul
                 role="list"
                 className="divide-y divide-gray-200 rounded-md border border-gray-200"
@@ -89,7 +89,7 @@ export default function About() {
                   <div className="ml-4 flex-shrink-0">
                     <a
                       href="/contact"
-                      className="font-medium text-indigo-600 hover:text-indigo-500"
+                      className="font-small text-indigo-600 hover:text-indigo-500"
                     >
                       Liên hệ Sales
                     </a>
@@ -104,7 +104,7 @@ export default function About() {
                   <div className="ml-4 flex-shrink-0">
                     <a
                       href="/contact"
-                      className="font-medium text-indigo-600 hover:text-indigo-500"
+                      className="font-small text-indigo-600 hover:text-indigo-500"
                     >
                       Liên hệ Sales
                     </a>

@@ -1,10 +1,10 @@
 export default function Head() {
   return (
     <>
-      <title>Thiết kế trang Kienkhoa.com</title>
+      <title>kienkhoa.com - Build Solid Applications</title>
       <meta
         name="description"
-        content="Tạo trang Kiến Khoa sử dụng Next.js, Tailwind và Framer Motion."
+        content="Kiến Khoa - Websites và ứng dụng web, mobile cho Doanh nghiệp"
       />
       <meta name="robots" content="noindex" />
     </>

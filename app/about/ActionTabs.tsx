@@ -49,7 +49,7 @@ export default function ActionTabs() {
               key={category}
               className={({ selected }) =>
                 clsx(
-                  "w-full rounded-lg py-2.5 text-sm font-medium leading-5",
+                  "font-small w-full rounded-lg py-2.5 text-sm leading-5",
                   "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-500 focus:outline-none focus:ring-2",
                   selected
                     ? "bg-white text-gray-1000 shadow"
@@ -76,7 +76,7 @@ export default function ActionTabs() {
                     key={post.id}
                     className="relative rounded-md p-3 hover:bg-gray-400"
                   >
-                    <h3 className="text-sm font-medium leading-5 text-gray-700">
+                    <h3 className="font-small text-sm leading-5 text-gray-700">
                       {post.title}
                     </h3>
                     <a
