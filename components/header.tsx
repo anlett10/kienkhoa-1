@@ -59,13 +59,13 @@ export const Header = () => {
               <li>
                 <Link href="/web-1">Thiết kế WEB</Link>
               </li>
-              <li>
+              <li className="md:hidden lg:block">
                 <Link href="#">Ứng dụng WEB</Link>
               </li>
-              <li className="md:hidden lg:block">
+              <li>
                 <Link href="/about">Về chúng tôi</Link>
               </li>
-              <li className="md:hidden lg:block">
+              <li>
                 <Link href="/contact">Liên hệ</Link>
               </li>
             </ul>
