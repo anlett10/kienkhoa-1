@@ -57,16 +57,33 @@ export const Header = () => {
               )}
             >
               <li>
-                <Link href="/web-1">Thiết kế WEB</Link>
+                <Link
+                  href="/web-1"
+                  onClick={() => setHamburgerMenuIsOpen(false)}
+                >
+                  Thiết kế WEB
+                </Link>
               </li>
               <li className="md:hidden lg:block">
-                <Link href="#">Ứng dụng WEB</Link>
+                <Link href="#" onClick={() => setHamburgerMenuIsOpen(false)}>
+                  Ứng dụng WEB
+                </Link>
               </li>
               <li>
-                <Link href="/about">Về chúng tôi</Link>
+                <Link
+                  href="/about"
+                  onClick={() => setHamburgerMenuIsOpen(false)}
+                >
+                  Về chúng tôi
+                </Link>
               </li>
               <li>
-                <Link href="/contact">Liên hệ</Link>
+                <Link
+                  href="/contact"
+                  onClick={() => setHamburgerMenuIsOpen(false)}
+                >
+                  Liên hệ
+                </Link>
               </li>
             </ul>
           </nav>
