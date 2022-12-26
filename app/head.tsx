@@ -4,7 +4,7 @@ export default function Head() {
       <title>kienkhoa.com - Build Solid Applications</title>
       <meta
         name="description"
-        content="Kiến Khoa - Websites và ứng dụng web, mobile cho Doanh nghiệp"
+        content="Kiến Khoa - Tạo websites, ứng dụng web, mobile cho Doanh nghiệp"
       />
       <meta name="robots" content="noindex" />
     </>

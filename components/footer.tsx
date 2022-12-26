@@ -10,7 +10,7 @@ const footerLinks = [
     title: "Sản phẩm",
     links: [
       { title: "Trang tư vấn", href: "#" },
-      { title: "Trang bán hàng", href: "#" },
+      { title: "Trang bán hàng", href: "/web-1" },
       { title: "Trang chuyên gia", href: "#" },
     ],
   },
@@ -32,6 +32,7 @@ const footerLinks = [
   {
     title: "Công ty",
     links: [
+      { title: "Về Kiến Khoa", href: "/about" },
       { title: "Ban điều hành", href: "#" },
       { title: "Nhóm phát triển", href: "#" },
     ],
