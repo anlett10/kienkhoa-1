@@ -33,7 +33,7 @@ const footerLinks = [
     title: "Công ty",
     links: [
       { title: "Về Kiến Khoa", href: "/about" },
-      { title: "Ban điều hành", href: "#" },
+      { title: "Ban điều hành (mẫu)", href: "/team" },
       { title: "Nhóm phát triển", href: "#" },
     ],
   },
