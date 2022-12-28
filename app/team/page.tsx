@@ -1,9 +1,11 @@
+"use client";
+
 const team = [
   {
     name: "Trần Hùng Ân",
     title: "Giám đốc - Kiến Khoa Software",
     profile:
-      "19 năm trong lĩnh vực Phát triền sản xuất Phần mềm máy tính",
+      "19 năm trong lĩnh vực Phát triền sản xuất Phần mềm máy tính 19 năm trong lĩnh vực Phát triền sản xuất Phần mềm máy tính",
   },
   {
     name: "Huỳnh Lê Chính",
@@ -41,7 +43,7 @@ export default function Team() {
         </div>
       </div>
       <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-0 py-24 px-4 sm:px-6 sm:py-16 lg:max-w-full lg:grid-cols-2 lg:px-8">
-        <div className="grid grid-cols-2 grid-rows-2 gap-x-4 px-8 sm:grid-cols-3 sm:gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 grid-rows-2 gap-4 px-8 sm:grid-cols-3 sm:gap-6 lg:gap-8">
           <div>
             <img
               src="alexander-andrews-brAkTCdnhW8-unsplash.jpg"
