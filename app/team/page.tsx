@@ -3,10 +3,10 @@ const team = [
     name: "Trần Hùng Ân",
     title: "Giám đốc - Kiến Khoa Software",
     profile:
-      "19 năm trong lĩnh vực Phát triền sản xuất Phần mềm máy tính 19 năm trong lĩnh vực Phát triền sản xuất Phần mềm máy tính",
+      "19 năm trong lĩnh vực Phát triền sản xuất Phần mềm máy tính",
   },
   {
-    name: "Huỳnh Minh Chính",
+    name: "Huỳnh Lê Chính",
     title: "Giám đốc Công nghệ",
     profile: "12+ năm Kiến trúc sư trưởng thiết kế hạ tầng web",
   },
@@ -56,7 +56,7 @@ export default function Team() {
               alt="Top down view of walnut card tray with embedded magnets and card groove."
               className="rounded-lg bg-gray-100"
             />
-            <p className="mt-2 text-sm text-gray-1000">Huỳnh Minh Chính</p>
+            <p className="mt-2 text-sm text-gray-1000">Huỳnh Lê Chính</p>
           </div>
           <div>
             <img
