@@ -5,28 +5,37 @@ const team = [
     name: "Trần Hùng Ân",
     title: "Giám đốc - Kiến Khoa Software",
     profile:
-      "19 năm trong lĩnh vực Phát triền sản xuất Phần mềm máy tính 19 năm trong lĩnh vực Phát triền sản xuất Phần mềm máy tính",
+      "19+ năm trong lĩnh vực gia công, phát triển sản xuất Phần mềm máy tính. 19+ năm trong lĩnh vực gia công, phát triển sản xuất Phần mềm máy tính. 19+ năm trong lĩnh vực gia công, phát triển sản xuất Phần mềm máy tính.",
   },
   {
     name: "Huỳnh Lê Chính",
     title: "Giám đốc Công nghệ",
-    profile: "12+ năm Kiến trúc sư trưởng thiết kế hạ tầng web",
+    profile:
+      "12+ năm Kiến trúc sư trưởng thiết kế hạ tầng web, 12+ năm Kiến trúc sư trưởng thiết kế hạ tầng web, 12+ năm Kiến trúc sư trưởng thiết kế hạ tầng web, 12+ năm Kiến trúc sư trưởng thiết kế hạ tầng web",
   },
   {
     name: "Lê Minh Dũng",
     title: "Giám đốc Tài chính",
-    profile: "17 năm chuyên gia cấp cao quản lý Tài chính",
+    profile:
+      "17 năm chuyên gia cấp cao quản lý Tài chính, 17 năm chuyên gia cấp cao quản lý Tài chính, 17 năm chuyên gia cấp cao quản lý Tài chính, 17 năm chuyên gia cấp cao quản lý Tài chính",
   },
   {
-    name: "Tống Thị Mai",
+    name: "Đỗ Thi Mai",
     title: "Giám đốc Nhân sự",
     profile:
-      "15 năm quản lý cấp cao làm việc tại các CTy Sản xuất, Bán lẻ, Tư vấn Giáo dục",
+      "15 năm quản lý cấp cao làm việc tại các CTy Sản xuất, Bán lẻ, Tư vấn Giáo dục 15 năm quản lý cấp cao làm việc tại các CTy Sản xuất, Bán lẻ, Tư vấn Giáo dục 15 năm quản lý cấp cao làm việc tại các CTy Sản xuất, Bán lẻ, Tư vấn Giáo dục",
   },
   {
     name: "Nguyễn Phương Đạt",
     title: "Giám đốc Thiết kế",
-    profile: "10+ năm Trưởng bộ phận Thiết kế",
+    profile:
+      "10+ năm Trưởng bộ phận Thiết kế 10+ năm Trưởng bộ phận Thiết kế 10+ năm Trưởng bộ phận Thiết kế 10+ năm Trưởng bộ phận Thiết kế 10+ năm Trưởng bộ phận Thiết kế 10+ năm Trưởng bộ phận Thiết kế 10+ năm Trưởng bộ phận Thiết kế",
+  },
+  {
+    name: "Hoàng Minh Lê",
+    title: "Giám đốc bán hàng",
+    profile:
+      "12+ năm Giám đốc bán hàng thị trường VN và ĐNA. 12+ năm Giám đốc bán hàng thị trường VN và ĐNA 12+ năm Giám đốc bán hàng thị trường VN và ĐNA 12+ năm Giám đốc bán hàng thị trường VN và ĐNA",
   },
 ];
 
@@ -42,8 +51,8 @@ export default function Team() {
           </ul>
         </div>
       </div>
-      <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-0 py-24 px-4 sm:px-6 sm:py-16 lg:max-w-full lg:grid-cols-2 lg:px-8">
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 px-8 sm:grid-cols-3 sm:gap-6 lg:gap-8">
+      <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-0 py-24 px-4 sm:px-6 sm:py-16 lg:max-w-full lg:grid-cols-3 lg:px-8">
+        <div className="mt-3 grid grid-cols-2 grid-rows-2 gap-4 px-8 sm:mt-8 sm:grid-cols-2 sm:gap-6 lg:gap-8">
           <div>
             <img
               src="alexander-andrews-brAkTCdnhW8-unsplash.jpg"
@@ -74,7 +83,7 @@ export default function Team() {
               alt="Walnut card tray filled with cards and card angled in dedicated groove."
               className="rounded-lg bg-gray-100"
             />
-            <p className="mt-2 text-sm text-gray-1000">Tống Thị Mai</p>
+            <p className="mt-2 text-sm text-gray-1000">Đỗ Thi Mai</p>
           </div>
           <div>
             <img
@@ -84,9 +93,17 @@ export default function Team() {
             />
             <p className="mt-2 text-sm text-gray-1000">Nguyễn Phương Đạt</p>
           </div>
+          <div>
+            <img
+              src="patrick-OIFgeLnjwrM-unsplash.jpg"
+              alt="Side of walnut card tray with card groove and recessed card area."
+              className="rounded-lg bg-gray-100"
+            />
+            <p className="mt-2 text-sm text-gray-1000">Hoàng Minh Lê</p>
+          </div>
         </div>
-        <div>
-          <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 px-8 sm:grid-cols-1 sm:gap-y-16 lg:gap-x-8">
+        <div className="col-span-2">
+          <dl className="grid grid-cols-1 gap-x-6 gap-y-10 px-8 sm:grid-cols-1 sm:gap-y-16 lg:grid-cols-2 lg:gap-x-8">
             {team.map((person) => (
               <div key={person.name} className="border-t border-gray-200 pt-4">
                 <dt className="text-sm text-gray-1000">{person.name}</dt>
