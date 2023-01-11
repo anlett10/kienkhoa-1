@@ -52,8 +52,8 @@ export const Header = () => {
             >
               <ul
                 className={clsx(
-                  "flex flex-col md:flex-row md:items-center [&_li]:mx-8 [&_li]:border-b [&_li]:border-none md:[&_li]:border-none",
-                  "ease-in [&_a]:flex [&_a]:h-[3rem] [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-lg [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-sm [&_a]:md:transition-colors",
+                  "flex flex-col md:flex-row md:items-center [&_li]:mx-2 [&_li]:my-1 [&_li]:border-b [&_li]:border-none md:[&_li]:border-none",
+                  "ease-in [&_a]:flex [&_a]:h-[3.2rem] [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-lg [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-sm [&_a]:md:transition-colors",
                   hamburgerMenuIsOpen && "[&_a]:translate-y-0"
                 )}
               >
