@@ -50,11 +50,11 @@ export const Header = () => {
                   : "translate-x-[-100vw] opacity-0"
               )}
             >
-              <div className="rounded-lg bg-hero-gradient py-2">
+              <div className="rounded-lg bg-slate-600 py-2">
                 <ul
                   className={clsx(
                     "flex flex-col md:flex-row md:items-center [&_li]:my-1 [&_li]:mx-1 [&_li]:border-b [&_li]:border-none md:[&_li]:border-none",
-                    "ease-in [&_a]:flex [&_a]:h-[2.6rem] [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-md [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-sm [&_a]:md:transition-colors",
+                    "ease-in [&_a]:flex [&_a]:h-[2.6rem] [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-sm [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-sm [&_a]:md:transition-colors",
                     hamburgerMenuIsOpen && "[&_a]:translate-y-0"
                   )}
                 >
@@ -65,7 +65,7 @@ export const Header = () => {
                       className="translate-y-[-1rem] animate-fade-in opacity-0"
                       onClick={() => setHamburgerMenuIsOpen(false)}
                     >
-                      Thiết kế WEB
+                      Thiết kế web
                     </Button>
                   </li>
                   <li className="md:hidden lg:block">
@@ -75,7 +75,7 @@ export const Header = () => {
                       className="translate-y-[-1rem] animate-fade-in opacity-0"
                       onClick={() => setHamburgerMenuIsOpen(false)}
                     >
-                      Ứng dụng WEB
+                      Ứng dụng web
                     </Button>
                   </li>
                   <li>
