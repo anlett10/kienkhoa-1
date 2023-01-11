@@ -21,7 +21,7 @@ export default async function Page() {
           <div key={product.id} className="col-span-4 lg:col-span-1">
             <ProductCard
               product={product}
-              href={`/web-1/product/${product.id}`}
+              href={`/web1/product/${product.id}`}
             />
           </div>
         ))}

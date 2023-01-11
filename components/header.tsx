@@ -50,7 +50,7 @@ export const Header = () => {
                   : "translate-x-[-100vw] opacity-0"
               )}
             >
-              <div className="rounded-lg bg-slate-600 py-2">
+              <div className="rounded-lg bg-slate-700 py-2">
                 <ul
                   className={clsx(
                     "flex flex-col md:flex-row md:items-center [&_li]:my-1 [&_li]:mx-1 [&_li]:border-b [&_li]:border-none md:[&_li]:border-none",
@@ -60,7 +60,7 @@ export const Header = () => {
                 >
                   <li>
                     <Button
-                      href="/web-1"
+                      href="/web1"
                       variant="secondary"
                       className="translate-y-[-1rem] animate-fade-in opacity-0"
                       onClick={() => setHamburgerMenuIsOpen(false)}

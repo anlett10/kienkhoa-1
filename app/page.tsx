@@ -49,7 +49,7 @@ export default function Homepage() {
           <div className="mt-8 flex gap-x-4 sm:justify-center">
             <Button
               className="translate-y-[-1rem] animate-fade-in opacity-0"
-              href="/web-1"
+              href="/web1"
               variant="secondary"
               size="medium"
             >
