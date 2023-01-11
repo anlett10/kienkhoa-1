@@ -50,60 +50,61 @@ export const Header = () => {
                   : "translate-x-[-100vw] opacity-0"
               )}
             >
-              <ul
-                className={clsx(
-                  "flex flex-col md:flex-row md:items-center [&_li]:mx-2 [&_li]:my-1 [&_li]:border-b [&_li]:border-none md:[&_li]:border-none",
-                  "ease-in [&_a]:flex [&_a]:h-[3.2rem] [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-lg [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-sm [&_a]:md:transition-colors",
-                  hamburgerMenuIsOpen && "[&_a]:translate-y-0"
-                )}
-              >
-                <li>
-                  <Button
-                    href="/web-1"
-                    variant="secondary"
-                    className="translate-y-[-1rem] animate-fade-in opacity-0"
-                    onClick={() => setHamburgerMenuIsOpen(false)}
-                  >
-                    Thiết kế WEB
-                  </Button>
-                </li>
-                <li className="md:hidden lg:block">
-                  <Button
-                    href="#"
-                    variant="secondary"
-                    className="translate-y-[-1rem] animate-fade-in opacity-0"
-                    onClick={() => setHamburgerMenuIsOpen(false)}
-                  >
-                    Ứng dụng WEB
-                  </Button>
-                </li>
-                <li>
-                  <Button
-                    href="/about"
-                    variant="secondary"
-                    className="translate-y-[-1rem] animate-fade-in opacity-0"
-                    onClick={() => setHamburgerMenuIsOpen(false)}
-                  >
-                    Về chúng tôi
-                  </Button>
-                </li>
-                <li>
-                  <Button
-                    href="/contact"
-                    variant="secondary"
-                    className="translate-y-[-1rem] animate-fade-in opacity-0"
-                    onClick={() => setHamburgerMenuIsOpen(false)}
-                  >
-                    Liên hệ
-                  </Button>
-                </li>
-              </ul>
+              <div className="rounded-lg bg-hero-gradient py-2">
+                <ul
+                  className={clsx(
+                    "flex flex-col md:flex-row md:items-center [&_li]:my-1 [&_li]:mx-1 [&_li]:border-b [&_li]:border-none md:[&_li]:border-none",
+                    "ease-in [&_a]:flex [&_a]:h-[2.6rem] [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-md [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-sm [&_a]:md:transition-colors",
+                    hamburgerMenuIsOpen && "[&_a]:translate-y-0"
+                  )}
+                >
+                  <li>
+                    <Button
+                      href="/web-1"
+                      variant="secondary"
+                      className="translate-y-[-1rem] animate-fade-in opacity-0"
+                      onClick={() => setHamburgerMenuIsOpen(false)}
+                    >
+                      Thiết kế WEB
+                    </Button>
+                  </li>
+                  <li className="md:hidden lg:block">
+                    <Button
+                      href="#"
+                      variant="secondary"
+                      className="translate-y-[-1rem] animate-fade-in opacity-0"
+                      onClick={() => setHamburgerMenuIsOpen(false)}
+                    >
+                      Ứng dụng WEB
+                    </Button>
+                  </li>
+                  <li>
+                    <Button
+                      href="/about"
+                      variant="secondary"
+                      className="translate-y-[-1rem] animate-fade-in opacity-0"
+                      onClick={() => setHamburgerMenuIsOpen(false)}
+                    >
+                      Về chúng tôi
+                    </Button>
+                  </li>
+                  <li>
+                    <Button
+                      href="/contact"
+                      variant="secondary"
+                      className="translate-y-[-1rem] animate-fade-in opacity-0"
+                      onClick={() => setHamburgerMenuIsOpen(false)}
+                    >
+                      Liên hệ
+                    </Button>
+                  </li>
+                </ul>
+              </div>
             </nav>
           </div>
         </div>
 
         <div className="ml-auto flex h-full items-center">
-          {/* <p className="mr-2 text-sm">Book</p> */}
           <ExButton
             href="https://cal.com/kienkhoa/30min"
             className="translate-y-[-1rem] animate-fade-in opacity-0"
