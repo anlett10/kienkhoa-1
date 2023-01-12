@@ -95,7 +95,7 @@ export const Header = () => {
                       className="translate-y-[-1rem] animate-fade-in opacity-0"
                       onClick={() => setHamburgerMenuIsOpen(false)}
                     >
-                      Liên hệ
+                      Liên hệ @
                     </Button>
                   </li>
                 </ul>

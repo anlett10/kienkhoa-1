@@ -25,7 +25,7 @@ export default function Accordion() {
                 Nhóm chúng tôi thiết kế các trang web cho khách hàng làm việc
                 trong các lĩnh vực Tư vấn Doanh nghiệp/Luật/Giáo dục - Trang
                 thông tin về Sản phẩm/Dịch vụ/Du lịch - Trang cá nhân chuyên
-                nghiệp cho Chuyên gia/Diễn giả
+                nghiệp cho Chuyên gia/Diễn giả.
               </Disclosure.Panel>
             </>
           )}
@@ -42,8 +42,14 @@ export default function Accordion() {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">
-                Ứng dụng cho phép người dùng cuối thao tác với dữ liệu, tương
-                tác với các module chức năng khác nhau
+                Doanh nghiệp cung cấp sản phẩm hoặc dịch vụ, đã xác lập được quy
+                trình làm việc với khách hàng. Hệ thống ứng dụng web giúp Doanh
+                nghiệp có khã năng tiếp nhận yêu cầu, phản hồi từ khách hàng,
+                sau đó hoàn thành chúng dựa trên các quy trình định sẵn (vd với
+                các yêu cầu nhanh như đặt xe, online booking/shopping) hoặc hệ
+                thống chỉ xử lý một phần yêu cầu, đồng thời cần thêm nhân sự
+                chuyên trách xử lý tiếp theo (vd với các yêu cầu cần quy trình
+                phức tạp cũng như thời gian xem xét).
               </Disclosure.Panel>
             </>
           )}
@@ -60,8 +66,8 @@ export default function Accordion() {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">
-                Thực hiện một phần hoặc toàn bộ công việc xây dựng hệ thống phần
-                mềm
+                Thực hiện một phần hoặc toàn bộ công việc tư vấn, xây dựng hệ thống phần
+                mềm nhằm đáp ứng quy trình vận hành, kinh doanh của khách hàng.
               </Disclosure.Panel>
             </>
           )}
