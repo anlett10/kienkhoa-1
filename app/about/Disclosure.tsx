@@ -44,12 +44,11 @@ export default function Accordion() {
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">
                 Doanh nghiệp cung cấp sản phẩm hoặc dịch vụ, đã xác lập được quy
                 trình làm việc với khách hàng. Hệ thống ứng dụng web giúp Doanh
-                nghiệp có khã năng tiếp nhận yêu cầu, phản hồi từ khách hàng,
-                sau đó hoàn thành chúng dựa trên các quy trình định sẵn (vd với
-                các yêu cầu nhanh như đặt xe, online booking/shopping) hoặc hệ
-                thống chỉ xử lý một phần yêu cầu, đồng thời cần thêm nhân sự
-                chuyên trách xử lý tiếp theo (vd với các yêu cầu cần quy trình
-                phức tạp cũng như thời gian xem xét).
+                nghiệp có khã năng tiếp nhận/cập nhật yêu cầu, phản hồi từ khách hàng,
+                xử lý tự động toàn bộ yêu cầu dựa trên các quy trình định sẵn (vd với
+                các dịch vụ như đặt xe, online booking/shopping) hoặc hệ
+                thống chỉ xử lý một phần đối với các yêu cầu có quy trình xử lý
+                phức tạp hơn, cần thêm nhân sự chuyên trách hỗ trợ.
               </Disclosure.Panel>
             </>
           )}
