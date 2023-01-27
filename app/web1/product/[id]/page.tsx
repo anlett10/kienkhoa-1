@@ -2,7 +2,7 @@ import products from "#/lib/data/products";
 import { cookies } from "next/headers";
 import { Ping } from "#/ui/Ping";
 import { Suspense } from "react";
-import { Product } from "../../Product";
+import { SingleProduct } from "../../SingleProduct";
 import {
   RecommendedProducts,
   RecommendedProductsSkeleton,
@@ -22,9 +22,7 @@ export default async function Page({ params }: { params: { id: string } }) {
 
   return (
     <div className="space-y-8 lg:space-y-14">
-      <div>
-        <Product product={product} cartCount={cartCount} />
-      </div>
+      <SingleProduct product={product} />
 
       <div className="relative">
         <div className="absolute top-2 -left-4">
