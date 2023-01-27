@@ -17,7 +17,7 @@ export const ProductLighteningDeal = ({
   return (
     <>
       <div className="flex">
-        <div className="rounded bg-vercel-pink px-1 text-xs text-pink-100">
+        <div className="rounded bg-slate-700 px-1 text-xs text-pink-100">
           Hết hạn sau {formatDistanceToNow(date)}
         </div>
       </div>

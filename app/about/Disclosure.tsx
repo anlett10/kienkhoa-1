@@ -6,7 +6,7 @@ import { ChevronUpIcon } from "@heroicons/react/20/solid";
 export default function Accordion() {
   return (
     <div className="w-full">
-      <div className="mx-auto w-full max-w-full rounded-2xl bg-blue-900/20 p-2">
+      <div className="mx-auto w-full max-w-full rounded-2xl bg-slate-700 p-2">
         <Disclosure>
           {({ open }) => (
             <>
@@ -44,11 +44,11 @@ export default function Accordion() {
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">
                 Doanh nghiệp cung cấp sản phẩm hoặc dịch vụ, đã xác lập được quy
                 trình làm việc với khách hàng. Hệ thống ứng dụng web giúp Doanh
-                nghiệp có khã năng tiếp nhận/cập nhật yêu cầu, phản hồi từ khách hàng,
-                xử lý tự động toàn bộ yêu cầu dựa trên các quy trình định sẵn (vd với
-                các dịch vụ như đặt xe, online booking/shopping) hoặc hệ
-                thống chỉ xử lý một phần đối với các yêu cầu có quy trình xử lý
-                phức tạp hơn, cần thêm nhân sự chuyên trách hỗ trợ.
+                nghiệp có khã năng tiếp nhận/cập nhật yêu cầu, phản hồi từ khách
+                hàng, xử lý tự động toàn bộ yêu cầu dựa trên các quy trình định
+                sẵn (vd với các dịch vụ như đặt xe, online booking/shopping)
+                hoặc hệ thống chỉ xử lý một phần đối với các yêu cầu có quy
+                trình xử lý phức tạp hơn, cần thêm nhân sự chuyên trách hỗ trợ.
               </Disclosure.Panel>
             </>
           )}
@@ -65,8 +65,9 @@ export default function Accordion() {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">
-                Thực hiện một phần hoặc toàn bộ công việc tư vấn, xây dựng hệ thống phần
-                mềm nhằm đáp ứng quy trình vận hành, kinh doanh của khách hàng.
+                Thực hiện một phần hoặc toàn bộ công việc tư vấn, xây dựng hệ
+                thống phần mềm nhằm đáp ứng quy trình vận hành, kinh doanh của
+                khách hàng.
               </Disclosure.Panel>
             </>
           )}

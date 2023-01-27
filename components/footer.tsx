@@ -10,7 +10,7 @@ const footerLinks = [
     title: "Sản phẩm",
     links: [
       { title: "Trang tư vấn", href: "#" },
-      { title: "Trang bán hàng", href: "/web1" },
+      { title: "Trang bán hàng (mẫu)", href: "/web1" },
       { title: "Trang chuyên gia", href: "#" },
     ],
   },

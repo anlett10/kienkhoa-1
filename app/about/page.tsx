@@ -4,7 +4,6 @@ import ActionTabs from "./ActionTabs";
 
 export default function About() {
   return (
-    // <div className="overflow-hidden border-gray-300 bg-slate-500 shadow sm:rounded-lg">
     <div className="rounded-xl border-gray-300 lg:rounded-2xl lg:border lg:p-7">
       <div className="px-4 pb-12 pt-6 sm:px-6">
         <h3 className="pb-6 text-lg font-medium leading-6">
@@ -89,7 +88,7 @@ export default function About() {
                   <div className="ml-4 flex-shrink-0">
                     <a
                       href="/contact"
-                      className="font-small text-indigo-600 hover:text-indigo-500"
+                      className="font-small text-blue-600 hover:text-blue-500"
                     >
                       Liên hệ Sales
                     </a>
@@ -104,7 +103,7 @@ export default function About() {
                   <div className="ml-4 flex-shrink-0">
                     <a
                       href="/contact"
-                      className="font-small text-indigo-600 hover:text-indigo-500"
+                      className="font-small text-blue-600 hover:text-blue-500"
                     >
                       Liên hệ Sales
                     </a>

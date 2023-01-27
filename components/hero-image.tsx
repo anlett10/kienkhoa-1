@@ -85,7 +85,7 @@ export const HeroImage = () => {
         <svg
           className={clsx(
             "absolute left-0 top-0 h-full w-full",
-            "[&_path]:stroke-white [&_path]:[stroke-opacity:0.2] [&_path]:[stroke-dasharray:1] [&_path]:[stroke-dashoffset:1]",
+            "[&_path]:stroke-white [&_path]:[stroke-dasharray:1] [&_path]:[stroke-dashoffset:1] [&_path]:[strokeOpacity:0.2]",
             inView && "[&_path]:animate-sketch-lines"
           )}
           width="100%"

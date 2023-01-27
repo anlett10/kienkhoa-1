@@ -1,5 +1,6 @@
 import products from "#/lib/data/products";
 import { cookies } from "next/headers";
+import { Ping } from "#/ui/Ping";
 import { Suspense } from "react";
 import { Product } from "../../Product";
 import {
@@ -25,10 +26,22 @@ export default async function Page({ params }: { params: { id: string } }) {
         <Product product={product} cartCount={cartCount} />
       </div>
 
+      <div className="relative">
+        <div className="absolute top-2 -left-4">
+          <Ping />
+        </div>
+      </div>
+
       <Suspense fallback={<RecommendedProductsSkeleton />}>
         {/* @ts-expect-error Async Server Component */}
         <RecommendedProducts id={params.id} />
       </Suspense>
+
+      <div className="relative">
+        <div className="absolute top-2 -left-4">
+          <Ping />
+        </div>
+      </div>
 
       <Suspense fallback={<ReviewsSkeleton />}>
         {/* @ts-expect-error Async Server Component */}

@@ -7,12 +7,14 @@ const shimmer = `relative overflow-hidden before:absolute before:inset-0 before:
 function Skeleton() {
   return (
     <div className="col-span-4 space-y-4 lg:col-span-1">
-      <div className={`relative h-[178px] rounded-xl bg-gray-900 ${shimmer}`} />
+      <div
+        className={`relative h-[178px] rounded-xl bg-slate-600 ${shimmer}`}
+      />
 
-      <div className="h-4 w-full rounded-lg bg-gray-600" />
-      <div className="h-6 w-1/3 rounded-lg bg-gray-600" />
-      <div className="h-4 w-full rounded-lg bg-gray-600" />
-      <div className="h-4 w-4/6 rounded-lg bg-gray-600" />
+      <div className="h-4 w-full rounded-lg bg-slate-600" />
+      <div className="h-6 w-1/3 rounded-lg bg-slate-600" />
+      <div className="h-4 w-full rounded-lg bg-slate-600" />
+      <div className="h-4 w-4/6 rounded-lg bg-slate-600" />
     </div>
   );
 }
@@ -21,8 +23,8 @@ export function RecommendedProductsSkeleton() {
   return (
     <div className="space-y-6 pb-1">
       <div className="space-y-2">
-        <div className={`h-6 w-1/3 rounded-lg bg-gray-600 ${shimmer}`} />
-        <div className={`h-4 w-1/2 rounded-lg bg-gray-600 ${shimmer}`} />
+        <div className={`h-6 w-1/3 rounded-lg bg-slate-600 ${shimmer}`} />
+        <div className={`h-4 w-1/2 rounded-lg bg-slate-600 ${shimmer}`} />
       </div>
 
       <div className="grid grid-cols-4 gap-6">
