@@ -1,14 +1,16 @@
+import { Pricing, PricingSkeleton } from "./Pricing";
 import type { Product } from "#/types/Product";
-import { cookies } from "next/headers";
-import { Pricing } from "./Pricing";
 import { ProductRating } from "#/ui/ProductRating";
 import Image from "next/image";
+import { Suspense } from "react";
 
-export const SingleProduct = ({ product }: { product: Product }) => {
-  // Get the cart count from the users cookies and pass it to the client
-  // AddToCart component
-  const cartCount = cookies().get("_cart_count")?.value || "0";
-
+export const SingleProduct = ({
+  product,
+  cartCount,
+}: {
+  product: Product;
+  cartCount: string;
+}) => {
   return (
     <div className="grid grid-cols-4 gap-6">
       <div className="col-span-full lg:col-span-1">
@@ -67,7 +69,10 @@ export const SingleProduct = ({ product }: { product: Product }) => {
       </div>
 
       <div className="col-span-full lg:col-span-1">
-        <Pricing product={product} cartCount={cartCount} />
+        <Suspense fallback={<PricingSkeleton />}>
+          {/* @ts-expect-error Async Server Component */}
+          <Pricing product={product} cartCount={cartCount} />
+        </Suspense>
       </div>
     </div>
   );

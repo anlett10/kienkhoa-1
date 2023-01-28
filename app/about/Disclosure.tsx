@@ -6,7 +6,7 @@ import { ChevronUpIcon } from "@heroicons/react/20/solid";
 export default function Accordion() {
   return (
     <div className="w-full">
-      <div className="mx-auto w-full max-w-full rounded-2xl bg-slate-700 p-2">
+      <div className="mx-auto w-full max-w-full rounded-2xl bg-slate-600 p-2">
         <Disclosure>
           {({ open }) => (
             <>

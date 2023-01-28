@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useRouter } from 'next/navigation';
-import { useTransition } from 'react';
-import { useCartCount } from './CartCountContext';
+import { useRouter } from "next/navigation";
+import { useTransition } from "react";
+import { useCartCount } from "./CartCountContext";
 
 export function AddToCart({ initialCartCount }: { initialCartCount: number }) {
   const router = useRouter();
@@ -41,7 +41,7 @@ export function AddToCart({ initialCartCount }: { initialCartCount: number }) {
       onClick={addToCart}
       disabled={isPending}
     >
-      Add to Cart
+      Thêm vào giỏ hàng
       {isPending ? (
         <div className="absolute right-2 top-1.5" role="status">
           <div

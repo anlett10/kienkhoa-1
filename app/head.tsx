@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>kienkhoa.com - Build Solid Applications</title>
+      <title>Kiến Khoa - Build Solid Applications</title>
       <meta
         name="description"
         content="Kiến Khoa - Tạo websites, ứng dụng web, mobile cho Doanh nghiệp"

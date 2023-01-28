@@ -22,7 +22,7 @@ export default async function Page({ params }: { params: { id: string } }) {
 
   return (
     <div className="space-y-8 lg:space-y-14">
-      <SingleProduct product={product} />
+      <SingleProduct product={product} cartCount={cartCount} />
 
       <div className="relative">
         <div className="absolute top-2 -left-4">
