@@ -1,6 +1,6 @@
-import products from "#/lib/data/products";
+import products from "@/lib/data/products";
 import { cookies } from "next/headers";
-import { Ping } from "#/ui/Ping";
+import { Ping } from "@/ui/Ping";
 import { Suspense } from "react";
 import { SingleProduct } from "../../SingleProduct";
 import {

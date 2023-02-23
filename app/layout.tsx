@@ -1,7 +1,7 @@
-import { AnalyticsWrapper } from "../components/analytics";
-import { CopyrightLinearBanner } from "../components/copyright-linear-banner";
+import { Analytics } from "../components/analytics";
+import { CopyrightBanner } from "../components/copyright-banner";
 import { Footer } from "../components/footer";
-import { Header } from "../components/header";
+import { SiteHeader } from "../components/site-header";
 import "../styles/globals.css";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -15,14 +15,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <div>
-          <Header />
+          <SiteHeader />
           <main className="bg-page-gradient pt-navigation-height">
             <div className="rounded-lg bg-slate-500 p-4 lg:p-8">{children}</div>
           </main>
           <Footer />
-          <CopyrightLinearBanner />
+          <CopyrightBanner />
         </div>
-        {/* <AnalyticsWrapper /> */}
+        <Analytics />
       </body>
     </html>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink } from "#/ui/ExternalLink";
+import { ExternalLink } from "@/ui/ExternalLink";
 import {
   MapPinIcon,
   EnvelopeIcon,

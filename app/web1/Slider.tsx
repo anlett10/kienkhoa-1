@@ -2,7 +2,7 @@
 
 import clsx from "clsx";
 import { useCallback, useMemo, useRef, useState } from "react";
-import { Chevron } from "#/components/icons/chevronN";
+import { Chevron } from "@/components/icons/chevronN";
 
 const slides = [
   {

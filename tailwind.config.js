@@ -1,7 +1,11 @@
+const plugin = require("tailwindcss/plugin");
 const colors = require("tailwindcss/colors");
+const { blackA, mauve, violet, indigo, purple } = require("@radix-ui/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ["class"],
   content: [
     "./components/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.{ts,tsx}",
@@ -13,7 +17,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: '"SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu, Cantarell,"Open Sans","Helvetica Neue",sans-serif',
+        sans: [
+          "IBM Plex Sans",
+          "IBM Plex Sans Fallback",
+          ...defaultTheme.fontFamily.sans,
+        ],
+        mono: [
+          "IBM Plex Mono",
+          "IBM Plex Mono Fallback",
+          ...defaultTheme.fontFamily.mono,
+        ],
       },
       fontSize: {
         xs: "1.2rem",
@@ -48,6 +61,11 @@ module.exports = {
           orange: "#F5A623",
           violet: "#7928CA",
         },
+        ...blackA,
+        ...mauve,
+        ...violet,
+        ...purple,
+        ...indigo,
       },
       spacing: {
         0: "0",
@@ -87,6 +105,46 @@ module.exports = {
         0: "0ms",
       },
       keyframes: ({ theme }) => ({
+        enterFromRight: {
+          from: { opacity: 0, transform: "translateX(200px)" },
+          to: { opacity: 1, transform: "translateX(0)" },
+        },
+        enterFromLeft: {
+          from: { opacity: 0, transform: "translateX(-200px)" },
+          to: { opacity: 1, transform: "translateX(0)" },
+        },
+        exitToRight: {
+          from: { opacity: 1, transform: "translateX(0)" },
+          to: { opacity: 0, transform: "translateX(200px)" },
+        },
+        exitToLeft: {
+          from: { opacity: 1, transform: "translateX(0)" },
+          to: { opacity: 0, transform: "translateX(-200px)" },
+        },
+        scaleIn: {
+          from: { opacity: 0, transform: "rotateX(-10deg) scale(0.9)" },
+          to: { opacity: 1, transform: "rotateX(0deg) scale(1)" },
+        },
+        scaleOut: {
+          from: { opacity: 1, transform: "rotateX(0deg) scale(1)" },
+          to: { opacity: 0, transform: "rotateX(-10deg) scale(0.95)" },
+        },
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+        fadeOut: {
+          from: { opacity: 1 },
+          to: { opacity: 0 },
+        },
+        "accordion-down": {
+          from: { height: 0 },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: 0 },
+        },
         "fade-in": {
           from: { opacity: 0, transform: "translateY(-10px)" },
           to: { opacity: 1, transform: "none" },
@@ -114,7 +172,7 @@ module.exports = {
           "0%": { "stroke-dashoffset": 1 },
           "50%": { "stroke-dashoffset": 0 },
           "99%": { "stroke-dashoffset": 0 },
-          "100%": { visiblity: "hidden" },
+          "100%": { visibility: "hidden" },
         },
         "glow-line-horizontal": {
           "0%": { opacity: 0, transform: "translateX(0)" },
@@ -169,6 +227,16 @@ module.exports = {
         },
       }),
       animation: {
+        scaleIn: "scaleIn 200ms ease",
+        scaleOut: "scaleOut 200ms ease",
+        fadeIn: "fadeIn 200ms ease",
+        fadeOut: "fadeOut 200ms ease",
+        enterFromLeft: "enterFromLeft 250ms ease",
+        enterFromRight: "enterFromRight 250ms ease",
+        exitToLeft: "exitToLeft 250ms ease",
+        exitToRight: "exitToRight 250ms ease",
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 1000ms var(--animation-delay, 0ms) ease forwards",
         "image-rotate": "image-rotate 1400ms ease forwards",
         "image-glow": "image-glow 4100ms 600ms ease-out forwards",
@@ -180,5 +248,26 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  typography: () => ({
+    DEFAULT: {
+      css: {
+        h2: {
+          fontWeight: 600,
+        },
+        a: {
+          fontWeight: 600,
+        },
+      },
+    },
+  }),
+  plugins: [
+    plugin(({ matchUtilities }) => {
+      matchUtilities({
+        perspective: (value) => ({
+          perspective: value,
+        }),
+      });
+    }),
+    require("@tailwindcss/typography"),
+  ],
 };

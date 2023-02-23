@@ -1,10 +1,10 @@
-import type { Product } from "#/types/Product";
-import { Ping } from "#/ui/Ping";
-import { ProductEstimatedArrival } from "#/ui/ProductEstimatedArrival";
-import { ProductLowStockWarning } from "#/ui/ProductLowStockWarning";
-import { ProductPrice } from "#/ui/ProductPrice";
-import { ProductSplitPayments } from "#/ui/ProductSplitPayments";
-import { ProductUsedPrice } from "#/ui/ProductUsedPrice";
+import type { Product } from "@/types/Product";
+import { Ping } from "@/ui/Ping";
+import { ProductEstimatedArrival } from "@/ui/ProductEstimatedArrival";
+import { ProductLowStockWarning } from "@/ui/ProductLowStockWarning";
+import { ProductPrice } from "@/ui/ProductPrice";
+import { ProductSplitPayments } from "@/ui/ProductSplitPayments";
+import { ProductUsedPrice } from "@/ui/ProductUsedPrice";
 import { dinero, type DineroSnapshot } from "dinero.js";
 import { Suspense } from "react";
 import { AddToCart } from "./AddToCart";

@@ -6,7 +6,7 @@ import { Button, ExButton } from "./button";
 
 const cookieBannerName = "copyright-banner-dismissed";
 
-export const CopyrightLinearBanner = () => {
+export const CopyrightBanner = () => {
   const [isCookieBannerVisible, setIsCookieBannerVisible] = useState(false);
 
   useEffect(() => {

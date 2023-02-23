@@ -1,5 +1,5 @@
-import products from "#/lib/data/products";
-import { ProductCard } from "#/ui/ProductCard";
+import products from "@/lib/data/products";
+import { ProductCard } from "@/ui/ProductCard";
 import Slider from "./Slider";
 
 export default async function Page() {

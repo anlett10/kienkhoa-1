@@ -1,6 +1,6 @@
 import { Pricing, PricingSkeleton } from "./Pricing";
-import type { Product } from "#/types/Product";
-import { ProductRating } from "#/ui/ProductRating";
+import type { Product } from "@/types/Product";
+import { ProductRating } from "@/ui/ProductRating";
 import Image from "next/image";
 import { Suspense } from "react";
 
@@ -63,7 +63,6 @@ export const SingleProduct = ({
         <ProductRating rating={product.rating} />
 
         <div className="space-y-4 text-sm text-gray-200">
-          <p>{product.description}</p>
           <p>{product.description}</p>
         </div>
       </div>

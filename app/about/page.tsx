@@ -1,6 +1,8 @@
 import Accordion from "./Disclosure";
 import Tabs from "./Tabs";
 import ActionTabs from "./ActionTabs";
+import ContactInfo from "./ContactInfo";
+import CalCom from "./CalCom";
 
 export default function About() {
   return (
@@ -113,6 +115,14 @@ export default function About() {
             </dd>
           </div>
         </dl>
+      </div>
+      <div className="mx-auto flex w-full flex-col px-3 pb-2 md:flex-row pt-12 xl:max-w-screen-xl">
+        <div className="flex h-full flex-col px-2 md:w-full lg:w-1/2 2xl:w-2/6">
+          <ContactInfo />
+        </div>
+        <div className="flex h-full flex-col px-2 md:w-full lg:w-1/2 2xl:w-2/6">
+          <CalCom />
+        </div>
       </div>
     </div>
   );

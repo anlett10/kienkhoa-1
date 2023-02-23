@@ -7,7 +7,7 @@ import { TwitterIcon } from "./icons/twitter";
 
 const footerLinks = [
   {
-    title: "Sản phẩm",
+    title: "Thiết kế web",
     links: [
       { title: "Trang tư vấn", href: "#" },
       { title: "Trang bán hàng (mẫu)", href: "/web1" },
@@ -17,9 +17,9 @@ const footerLinks = [
   {
     title: "Dịch vụ",
     links: [
-      { title: "Gia công phần mềm", href: "#" },
-      { title: "Ứng dụng Blockchain", href: "#" },
-      { title: "Tư vấn đào tạo", href: "#" },
+      { title: "Ứng dụng web", href: "#" },
+      { title: "Ứng dụng mobile", href: "#" },
+      { title: "Ứng dụng Web3", href: "#" },
     ],
   },
   {
