@@ -4,6 +4,8 @@ import ActionTabs from "./ActionTabs";
 import ContactInfo from "./ContactInfo";
 import CalCom from "./CalCom";
 
+import { ExternalLink } from "@/ui/ExternalLink";
+
 export default function About() {
   return (
     <div className="rounded-xl border-gray-300 lg:rounded-2xl lg:border lg:p-7">
@@ -88,12 +90,9 @@ export default function About() {
                     </span>
                   </div>
                   <div className="ml-4 flex-shrink-0">
-                    <a
-                      href="/contact"
-                      className="font-small text-blue-600 hover:text-blue-500"
-                    >
+                    <ExternalLink href="https://cal.com/kienkhoa/30min">
                       Liên hệ Sales
-                    </a>
+                    </ExternalLink>
                   </div>
                 </li>
                 <li className="flex items-center justify-between py-3 pl-3 pr-4 text-sm">
@@ -103,12 +102,9 @@ export default function About() {
                     </span>
                   </div>
                   <div className="ml-4 flex-shrink-0">
-                    <a
-                      href="/contact"
-                      className="font-small text-blue-600 hover:text-blue-500"
-                    >
+                    <ExternalLink href="https://cal.com/kienkhoa/30min">
                       Liên hệ Sales
-                    </a>
+                    </ExternalLink>
                   </div>
                 </li>
               </ul>
