@@ -13,8 +13,9 @@ export default async function Page() {
             <li>Danh mục hàng đang khuyến mãi</li>
           </ul>
         </div>
-        <Slider />
       </div>
+
+      <Slider />
 
       <div className="grid grid-cols-4 gap-6">
         {products.slice(0, 4).map((product) => (
