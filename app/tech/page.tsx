@@ -132,10 +132,10 @@ export default function Tech() {
                   Nâng cấp ứng dụng Legacy
                 </h2>
                 <p className="mt-6">
-                  Các hệ thống đang vận hành, cần nâng cấp mở rộng tính năng,
+                Các hệ thống đang vận hành, cần nâng cấp mở rộng tính năng,
                   hoặc chuyển sang dùng các công nghệ mới phù hợp hơn. Chúng tôi
-                  mang đến các giải pháp hiệu quả nhất dựa trên kinh nghiệm phát
-                  triển, năng lực của đội ngũ phát triển.
+                  mang đến các giải pháp hiệu quả nhất dựa trên kinh nghiệm xây
+                  dựng, năng lực của đội ngũ phát triển.
                 </p>
               </div>
             </div>
