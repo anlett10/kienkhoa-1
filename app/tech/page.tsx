@@ -59,7 +59,7 @@ export default function Tech() {
                   Các lựa chọn kỹ thuật
                 </h1>
                 <p className="mt-6 text-md leading-8 text-gray-700">
-                  Sử dụng các công nghệ phát triển web mạnh mẽ, đã được chứng
+                  Sử dụng các công nghệ phát triển web/mobile mạnh mẽ, đã được chứng
                   thực nhằm mang đến hiệu năng cao, trải nghiệm người dùng tốt
                   nhất cho khách hàng.
                 </p>
@@ -93,7 +93,7 @@ export default function Tech() {
                       <strong className="font-semibold text-gray-900">
                         Web1 - Thiết kế trang:
                       </strong>{" "}
-                      Figma/Framer, NextJS, Sanity, TailwindCSS, Vercel
+                      Figma/Framer, NextJS, Sanity, TailwindCSS, Tamagui, Vercel
                     </span>
                   </li>
                   <li className="flex gap-x-3">
@@ -103,10 +103,10 @@ export default function Tech() {
                     />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                        Web2 - Xây ứng dụng:
+                        Web2 - Xây ứng dụng Web/Mobile:
                       </strong>{" "}
-                      ReactJS (Native), NextJS, Postgresql, Prisma, Supabase,
-                      TypeScript, Swift/SwiftUI (iOS)
+                      React Native/Expo, ReactJS/Next, PostgreSQL/Prisma, Supabase
+                      Neon, Bun/Elysia/TS, Swift/SwiftUI (iOS)
                     </span>
                   </li>
                   <li className="flex gap-x-3">
@@ -119,15 +119,10 @@ export default function Tech() {
                         Web3 - Ứng dụng Blockchain:
                       </strong>{" "}
                       Solana, Aptos, Sui Rust-based blockchains, viết smart
-                      contract dùng ngôn ngữ Move
+                      contract dùng ngôn ngữ lập trình Move (Sui/Aptos, Solana)
                     </span>
                   </li>
                 </ul>
-                <p className="mt-8">
-                  Chúng tôi tin rằng một hệ thống ứng dụng tốt nhất sẽ được xây
-                  dựng dựa trên sự kết hợp của 3 ngôn ngữ TypeScript, Rust,
-                  Move.
-                </p>
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
                   Nâng cấp ứng dụng Legacy
                 </h2>
