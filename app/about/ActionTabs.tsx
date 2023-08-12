@@ -19,11 +19,11 @@ export default function ActionTabs() {
     "Công nghệ": [
       {
         id: 1,
-        title: "Typescript, React/NextJS, TailwindCSS, SQL, React Native/Swift",
+        title: "ReactJS/Next, React Native, SwiftUI, PostgreSQL/Prisma, TS/Bun/Elysia",
       },
       {
         id: 2,
-        title: "Vercel, Azure, AWS, Google Cloud",
+        title: "Supabase, Neon, Vercel, AWS, Cloudflare",
       },
     ],
     "Dịch vụ": [
