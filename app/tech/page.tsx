@@ -93,7 +93,7 @@ export default function Tech() {
                       <strong className="font-semibold text-gray-900">
                         Web1 - Thiết kế trang:
                       </strong>{" "}
-                      Figma/Framer, NextJS, Sanity, TailwindCSS, Tamagui, Vercel
+                      Figma/Framer, ReactJS/Next, SanityIO, TailwindCSS, Tamagui, Vercel
                     </span>
                   </li>
                   <li className="flex gap-x-3">
@@ -103,10 +103,10 @@ export default function Tech() {
                     />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                        Web2 - Xây ứng dụng Web/Mobile:
+                        Web2 - Ứng dụng Web/Mobile:
                       </strong>{" "}
-                      React Native/Expo, ReactJS/Next, PostgreSQL/Prisma, Supabase
-                      Neon, Bun/Elysia/TS, Swift/SwiftUI (iOS)
+                      React Native/Expo, Swift/SwiftUI, ReactJS/Next, PostgreSQL/Prisma, 
+                      Supabase/Neon, Bun/Elysia/TS
                     </span>
                   </li>
                   <li className="flex gap-x-3">
@@ -119,7 +119,7 @@ export default function Tech() {
                         Web3 - Ứng dụng Blockchain:
                       </strong>{" "}
                       Solana, Aptos, Sui Rust-based blockchains, viết smart
-                      contract dùng ngôn ngữ lập trình Move (Sui/Aptos, Solana)
+                      contract dùng ngôn ngữ lập trình Move
                     </span>
                   </li>
                 </ul>
