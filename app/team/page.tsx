@@ -51,7 +51,7 @@ export default function Team() {
           </ul>
         </div>
       </div>
-      <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-0 py-24 px-4 sm:px-6 sm:py-16 lg:max-w-full lg:grid-cols-3 lg:px-8">
+      <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-0 gap-y-16 px-4 py-24 sm:px-6 sm:py-16 lg:max-w-full lg:grid-cols-3 lg:px-8">
         <div className="mt-3 grid grid-cols-2 grid-rows-2 gap-4 px-8 sm:mt-12 sm:grid-cols-2 sm:gap-6 lg:gap-8">
           <div>
             <img
