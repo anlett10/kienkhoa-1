@@ -57,17 +57,17 @@ const MainNav = () => {
                     </a>
                   </NavigationMenu.Link>
                 </li>
-                <div className="border-t">
+                <div className="border-t border-indigo-500">
                   <ListItem href="/" title="Ứng dụng web">
                     Phát triển ứng dụng web cho Doanh nghiệp
                   </ListItem>
                 </div>
-                <div className="border-t">
+                <div className="border-t border-indigo-500">
                   <ListItem href="/" title="Ứng dụng mobile">
                     Phát triển ứng dụng mobile trên iOS/Android
                   </ListItem>
                 </div>
-                <div className="border-t">
+                <div className="border-t border-indigo-500">
                   <ListItem href="/" title="Ứng dụng Web3">
                     Phát triển smart contract trên blockchain Solana/Aptos/Sui
                   </ListItem>
@@ -86,17 +86,17 @@ const MainNav = () => {
             </NavigationMenu.Trigger>
             <NavigationMenu.Content className="absolute left-0 top-0 w-full sm:w-auto">
               <ul className="m-0 grid list-none gap-x-[10px] p-[22px] sm:w-[350px] sm:grid-flow-col sm:grid-rows-3">
-                <div className="border-t">
+                <div className="border-t border-indigo-500">
                   <ListItem title="Trang mua sắm" href="/web1">
                     Thiết kế trang web chuyên về quản lý bán hàng
                   </ListItem>
                 </div>
-                <div className="border-t">
+                <div className="border-t border-indigo-500">
                   <ListItem title="Trang tư vấn" href="/team">
                     Trang chuyên về dịch vụ tư vấn Luật, Doanh nghiệp, Đào tạo
                   </ListItem>
                 </div>
-                <div className="border-t">
+                <div className="border-t border-indigo-500">
                   <ListItem title="Trang cá nhân" href="/">
                     Trang cá nhân dành cho chuyên gia, diễn giả
                   </ListItem>
