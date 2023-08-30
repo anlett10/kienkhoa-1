@@ -19,7 +19,7 @@ const MainNav = () => {
       <NavigationMenu.Root className="relative z-10 flex flex-1 items-center justify-center">
         <NavigationMenu.List className="center m-0 flex list-none rounded-[6px] bg-white p-1 shadow-[0_2px_10px] shadow-blackA7">
           <NavigationMenu.Item>
-            <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-bold leading-none text-indigo9 outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7">
+            <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-semibold leading-none text-indigo9 outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7">
               Dịch vụ{" "}
               <CaretDownIcon
                 className="relative top-[1px] text-indigo9 transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
@@ -48,7 +48,7 @@ const MainNav = () => {
                           transform="matrix(.1 0 0 -.1 0 64)"
                         ></path>
                       </svg>
-                      <div className="mb-[7px] mt-4 text-[18px] font-medium leading-[1.2] text-white">
+                      <div className="mb-[7px] mt-4 text-[18px] font-semibold leading-[1.2] text-white">
                         Kiến Khoa
                       </div>
                       <p className="text-[14px] leading-[1.3] text-mauve4">
@@ -77,7 +77,7 @@ const MainNav = () => {
           </NavigationMenu.Item>
 
           <NavigationMenu.Item>
-            <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-bold leading-none text-indigo9 outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7">
+            <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-semibold leading-none text-indigo9 outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7">
               Thiết kế web{" "}
               <CaretDownIcon
                 className="relative top-[1px] text-indigo9 transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
@@ -107,7 +107,7 @@ const MainNav = () => {
 
           <NavigationMenu.Item>
             <NavigationMenu.Link
-              className="block select-none rounded-[4px] px-3 py-2 text-[15px] font-bold leading-none text-indigo9 no-underline outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7"
+              className="block select-none rounded-[4px] px-3 py-2 text-[15px] font-semibold leading-none text-indigo9 no-underline outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7"
               href="/tech"
             >
               Công nghệ
@@ -116,7 +116,7 @@ const MainNav = () => {
 
           <NavigationMenu.Item>
             <NavigationMenu.Link
-              className="block select-none rounded-[4px] px-3 py-2 text-[15px] font-bold leading-none text-indigo9 no-underline outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7"
+              className="block select-none rounded-[4px] px-3 py-2 text-[15px] font-semibold leading-none text-indigo9 no-underline outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7"
               href="/about"
             >
               Về chúng tôi
@@ -162,7 +162,7 @@ const ListItem = React.forwardRef<
             {...props}
             ref={forwardedRef}
           >
-            <div className="mb-[5px] font-medium leading-[1.2] text-violet12">
+            <div className="mb-[5px] font-semibold leading-[1.2] text-violet12">
               {title}
             </div>
             <p className="leading-[1.4] text-mauve11">{children}</p>
