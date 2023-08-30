@@ -51,7 +51,7 @@ const MainNav = () => {
                       <div className="mb-[7px] mt-4 text-[18px] font-semibold leading-[1.2] text-white">
                         Kiến Khoa
                       </div>
-                      <p className="text-[14px] leading-[1.3] text-mauve4">
+                      <p className="text-[14px] leading-[1.3] text-mauve8">
                         Tư vấn thiết kế phần mềm tốt nhất cho Doanh nghiệp
                       </p>
                     </a>
