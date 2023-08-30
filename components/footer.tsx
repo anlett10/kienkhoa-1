@@ -9,24 +9,24 @@ const footerLinks = [
   {
     title: "Thiết kế web",
     links: [
-      { title: "Trang tư vấn", href: "#" },
+      { title: "Trang tư vấn", href: "/" },
       { title: "Trang bán hàng (mẫu)", href: "/web1" },
-      { title: "Trang chuyên gia", href: "#" },
+      { title: "Trang chuyên gia", href: "/" },
     ],
   },
   {
     title: "Dịch vụ",
     links: [
-      { title: "Ứng dụng web", href: "#" },
-      { title: "Ứng dụng mobile", href: "#" },
-      { title: "Ứng dụng Web3", href: "#" },
+      { title: "Ứng dụng web", href: "/" },
+      { title: "Ứng dụng mobile", href: "/" },
+      { title: "Ứng dụng Web3", href: "/" },
     ],
   },
   {
     title: "Khách hàng",
     links: [
-      { title: "Quy trình", href: "#" },
-      { title: "Giá trị", href: "#" },
+      { title: "Quy trình", href: "/" },
+      { title: "Giá trị", href: "/" },
     ],
   },
   {
@@ -34,7 +34,7 @@ const footerLinks = [
     links: [
       { title: "Về Kiến Khoa", href: "/about" },
       { title: "Ban điều hành (mẫu)", href: "/team" },
-      { title: "Nhóm phát triển", href: "#" },
+      { title: "Nhóm phát triển", href: "/" },
     ],
   },
 ];

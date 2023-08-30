@@ -19,7 +19,8 @@ export default function ActionTabs() {
     "Công nghệ": [
       {
         id: 1,
-        title: "ReactJS/Next, React Native, SwiftUI, PostgreSQL/Prisma, TS/Bun/Elysia",
+        title:
+          "ReactJS/Next, React Native, SwiftUI, PostgreSQL/Prisma, TS/Bun/Elysia",
       },
       {
         id: 2,
@@ -82,7 +83,7 @@ export default function ActionTabs() {
                       {post.title}
                     </dd>
                     <a
-                      href="#"
+                      href="/"
                       className={clsx(
                         "absolute inset-0 rounded-md",
                         "ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"

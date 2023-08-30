@@ -29,7 +29,7 @@ export const MobileNav = () => {
   }, [setHamburgerMenuIsOpen]);
 
   return (
-    <Container className="md:hidden flex h-navigation-height">
+    <Container className="flex h-navigation-height md:hidden">
       <Link className="flex items-center text-md" href="/">
         <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> Kiến Khoa
       </Link>
@@ -43,7 +43,7 @@ export const MobileNav = () => {
         >
           <nav
             className={clsx(
-              "fixed top-navigation-height left-0 h-[calc(100vh_-_var(--navigation-height))] w-full overflow-auto bg-background transition-opacity duration-500 md:relative md:top-0 md:block md:h-auto md:w-auto md:translate-x-0 md:overflow-hidden md:bg-transparent md:opacity-100 md:transition-none",
+              "fixed left-0 top-navigation-height h-[calc(100vh_-_var(--navigation-height))] w-full overflow-auto bg-background transition-opacity duration-500 md:relative md:top-0 md:block md:h-auto md:w-auto md:translate-x-0 md:overflow-hidden md:bg-transparent md:opacity-100 md:transition-none",
               hamburgerMenuIsOpen
                 ? "translate-x-0 opacity-100"
                 : "translate-x-[-100vw] opacity-0"
@@ -52,14 +52,14 @@ export const MobileNav = () => {
             <div className="rounded-lg bg-slate-700 py-2">
               <ul
                 className={clsx(
-                  "flex flex-col md:flex-row md:items-center [&_li]:my-1 [&_li]:mx-1 [&_li]:border-b [&_li]:border-none md:[&_li]:border-none",
+                  "flex flex-col md:flex-row md:items-center [&_li]:mx-1 [&_li]:my-1 [&_li]:border-b [&_li]:border-none md:[&_li]:border-none",
                   "ease-in [&_a]:flex [&_a]:h-[2.6rem] [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-sm [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-sm [&_a]:md:transition-colors",
                   hamburgerMenuIsOpen && "[&_a]:translate-y-0"
                 )}
               >
                 <li className="md:hidden lg:block">
                   <Button
-                    href="#"
+                    href="/"
                     variant="secondary"
                     className="translate-y-[-1rem] animate-fade-in opacity-0"
                     onClick={() => setHamburgerMenuIsOpen(false)}
