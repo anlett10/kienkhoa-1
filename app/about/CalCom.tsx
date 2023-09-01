@@ -27,7 +27,7 @@ const data = [
 
 const CalCom = () => {
   return (
-    <div className="mb-6 border-gray-300 lg:rounded-md lg:border lg:p-7">
+    <div className="mb-6 border-blackA8 lg:rounded-md lg:border lg:p-7">
       <h4 className="text-heading -mt-1 pb-7 text-lg font-bold md:pb-10 lg:pb-6">
         Thông tin tạo lịch họp:
       </h4>

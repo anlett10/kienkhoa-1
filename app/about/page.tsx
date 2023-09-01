@@ -8,7 +8,7 @@ import { ExternalLink } from "@/ui/ExternalLink";
 
 export default function About() {
   return (
-    <div className="rounded-xl border-gray-300 lg:rounded-2xl lg:border lg:p-7">
+    <div className="rounded-xl border-dashed lg:rounded-2xl lg:border lg:p-7">
       <div className="px-4 pb-12 pt-6 sm:px-6">
         <h3 className="pb-6 text-lg font-medium leading-6">
           Về nhóm Kiến Khoa
@@ -112,7 +112,7 @@ export default function About() {
           </div>
         </dl>
       </div>
-      <div className="mx-auto flex w-full flex-col px-3 pb-2 md:flex-row pt-12 xl:max-w-screen-xl">
+      <div className="mx-auto flex w-full flex-col px-3 pb-2 pt-12 md:flex-row xl:max-w-screen-xl">
         <div className="flex h-full flex-col px-2 md:w-full lg:w-1/2 2xl:w-2/6">
           <ContactInfo />
         </div>

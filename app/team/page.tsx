@@ -41,7 +41,7 @@ const team = [
 
 export default function Team() {
   return (
-    <div className="rounded-xl border-gray-300 lg:rounded-2xl lg:border lg:p-6">
+    <div className="rounded-xl border-dashed lg:rounded-2xl lg:border lg:p-6">
       <div className="space-y-3 px-24 pt-3">
         <h1 className="text-xl font-medium">Ban điều hành & cố vấn</h1>
         <div className="space-y-5">
