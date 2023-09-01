@@ -30,10 +30,13 @@ export const MobileNav = () => {
 
   return (
     <Container className="flex h-navigation-height md:hidden">
-      <Link className="flex items-center text-md" href="/">
+      <Link
+        className="flex items-center text-md"
+        href="/"
+        onClick={() => setHamburgerMenuIsOpen(false)}
+      >
         <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> Kiến Khoa
       </Link>
-
       <div className="ml-auto flex h-full items-center">
         <div
           className={clsx(
