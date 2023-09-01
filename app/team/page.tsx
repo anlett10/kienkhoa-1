@@ -103,7 +103,7 @@ export default function Team() {
           </div>
         </div>
         <div className="col-span-2">
-          <dl className="grid grid-cols-1 gap-x-6 gap-y-10 px-8 sm:grid-cols-1 sm:gap-y-16 lg:grid-cols-2 lg:gap-x-8">
+          <dl className="grid grid-cols-1 gap-x-6 gap-y-4 px-8 sm:grid-cols-1 sm:gap-y-16 lg:grid-cols-2 lg:gap-x-8">
             {team.map((person) => (
               <div key={person.name} className="pt-4">
                 <dt className="text-sm text-gray-1000">{person.name}</dt>
