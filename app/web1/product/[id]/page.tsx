@@ -31,7 +31,6 @@ export default async function Page({ params }: { params: { id: string } }) {
       </div>
 
       <Suspense fallback={<RecommendedProductsSkeleton />}>
-        {/* @ts-expect-error Async Server Component */}
         <RecommendedProducts id={params.id} />
       </Suspense>
 
@@ -42,7 +41,6 @@ export default async function Page({ params }: { params: { id: string } }) {
       </div>
 
       <Suspense fallback={<ReviewsSkeleton />}>
-        {/* @ts-expect-error Async Server Component */}
         <Reviews />
       </Suspense>
     </div>
