@@ -21,7 +21,7 @@ const data = [
   {
     icon: RocketLaunchIcon,
     name: "Bắt đầu",
-    description: "Chọn vào link dưới đây để hoàn thành đặt lịch gọi",
+    description: "Nhấn vào link dưới đây để hoàn thành đặt lịch gọi",
   },
 ];
 

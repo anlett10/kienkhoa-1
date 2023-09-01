@@ -39,7 +39,7 @@ export default function Homepage() {
         </Hero>
 
         <header className="py-16 sm:text-center">
-          <h1 className="mt-12 mb-4 text-3xl font-extrabold tracking-tight sm:text-4xl">
+          <h1 className="mb-4 mt-12 text-3xl font-extrabold tracking-tight sm:text-4xl">
             Phần mềm thích ứng với mô hình Kinh doanh
           </h1>
           <p className="text-lg text-primary-text">
