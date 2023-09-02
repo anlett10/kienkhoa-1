@@ -87,7 +87,17 @@ export const MobileNav = () => {
                     className="translate-y-[-1rem] animate-fade-in opacity-0"
                     onClick={() => setHamburgerMenuIsOpen(false)}
                   >
-                    Công nghệ web
+                    Công nghệ
+                  </Button>
+                </li>
+                <li>
+                  <Button
+                    href="/"
+                    variant="secondary"
+                    className="translate-y-[-1rem] animate-fade-in opacity-0"
+                    onClick={() => setHamburgerMenuIsOpen(false)}
+                  >
+                    Quy trình
                   </Button>
                 </li>
                 <li>

@@ -24,7 +24,7 @@ export default function ActionTabs() {
       },
       {
         id: 2,
-        title: "Supabase, Neon, Vercel, AWS, Cloudflare",
+        title: "Supabase, Neon, Convex, Vercel, AWS, Cloudflare",
       },
     ],
     "Dịch vụ": [

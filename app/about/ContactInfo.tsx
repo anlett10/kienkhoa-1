@@ -41,9 +41,7 @@ const ContactInfo = () => {
           </div>
           <div className="sm:min-w-0 sm:flex-1">
             <p className="text-sm font-semibold leading-7">{info.name}</p>
-            <p className="text-sm leading-7 text-primary-text">
-              {info.description}
-            </p>
+            <p className="text-sm leading-7 text-mauve8">{info.description}</p>
           </div>
         </div>
       ))}

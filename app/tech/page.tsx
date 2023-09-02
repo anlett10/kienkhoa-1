@@ -56,12 +56,12 @@ export default function Tech() {
             <div className="lg:pr-5">
               <div className="lg:max-w-full">
                 <h1 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-                  Các lựa chọn kỹ thuật
+                  Phát triển ứng dụng từ đầu
                 </h1>
                 <p className="mt-6 text-md leading-8 text-gray-700">
                   Sử dụng các công nghệ phát triển web/mobile mạnh mẽ, đã được chứng
-                  thực nhằm mang đến hiệu năng cao, trải nghiệm người dùng tốt
-                  nhất cho khách hàng.
+                  thực giúp đẩy nhanh quá trình xây dựng phát triển, vận hành hệ thống
+                  đồng thời mang đến hiệu năng ổn định, trải nghiệm người dùng tốt nhất cho khách hàng.
                 </p>
               </div>
             </div>
@@ -75,22 +75,15 @@ export default function Tech() {
           </div>
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-full lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-5">
-              <div className="max-w-xl text-sm leading-7 text-gray-700 lg:max-w-full">
-                <p>
-                  Lựa chọn công nghệ dựa trên mức độ hiểu biết, khã năng của các
-                  thành viên, đồng thời mở rộng tìm hiểu những công nghệ mới
-                  tương thích tốt nhất với nền tảng đang có nhằm đẩy nhanh quá
-                  trình phát triển, nâng cấp, vận hành hệ thống cho các ứng dụng
-                  có mức độ tương tác cao với người dùng cuối.
-                </p>
-                <ul role="list" className="mt-8 space-y-8 text-gray-600">
+              <div className="max-w-xl text-sm leading-7 lg:max-w-full">
+                <ul role="list" className="space-y-8">
                   <li className="flex gap-x-3">
                     <GlobeAltIcon
                       className="mt-1 h-5 w-5 flex-none text-indigo-600"
                       aria-hidden="true"
                     />
-                    <span>
-                      <strong className="font-semibold text-gray-900">
+                    <span className="text-mauve11">
+                      <strong className="font-semibold">
                         Web1 - Thiết kế trang:
                       </strong>{" "}
                       Figma/Framer, ReactJS/Next, SanityIO, TailwindCSS, Tamagui, Vercel
@@ -101,12 +94,12 @@ export default function Tech() {
                       className="mt-1 h-5 w-5 flex-none text-indigo-600"
                       aria-hidden="true"
                     />
-                    <span>
-                      <strong className="font-semibold text-gray-900">
+                    <span className="text-mauve11">
+                      <strong className="font-semibold">
                         Web2 - Ứng dụng Web/Mobile:
                       </strong>{" "}
                       React Native/Expo, Swift/SwiftUI, ReactJS/Next, PostgreSQL/Prisma, 
-                      Supabase/Neon, Bun/Elysia/TS
+                      Convex, Bun/Elysia/TS
                     </span>
                   </li>
                   <li className="flex gap-x-3">
@@ -114,8 +107,8 @@ export default function Tech() {
                       className="mt-1 h-5 w-5 flex-none text-indigo-600"
                       aria-hidden="true"
                     />
-                    <span>
-                      <strong className="font-semibold text-gray-900">
+                    <span className="text-mauve11">
+                      <strong className="font-semibold">
                         Web3 - Ứng dụng Blockchain:
                       </strong>{" "}
                       Solana, Aptos, Sui Rust-based blockchains, viết smart
@@ -126,8 +119,8 @@ export default function Tech() {
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
                   Nâng cấp ứng dụng Legacy
                 </h2>
-                <p className="mt-6">
-                Các hệ thống đang vận hành, cần nâng cấp mở rộng tính năng,
+                <p className="mt-6 text-md leading-8 text-gray-700">
+                  Các hệ thống đang vận hành, cần nâng cấp mở rộng tính năng,
                   hoặc chuyển sang dùng các công nghệ mới phù hợp hơn. Chúng tôi
                   mang đến các giải pháp hiệu quả nhất dựa trên kinh nghiệm xây
                   dựng, năng lực của đội ngũ phát triển.

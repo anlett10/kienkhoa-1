@@ -117,6 +117,15 @@ const MainNav = () => {
           <NavigationMenu.Item>
             <NavigationMenu.Link
               className="block select-none rounded-[4px] px-3 py-2 text-[15px] font-semibold leading-none text-indigo9 no-underline outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7"
+              href="/"
+            >
+              Quy trình
+            </NavigationMenu.Link>
+          </NavigationMenu.Item>
+
+          <NavigationMenu.Item>
+            <NavigationMenu.Link
+              className="block select-none rounded-[4px] px-3 py-2 text-[15px] font-semibold leading-none text-indigo9 no-underline outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7"
               href="/about"
             >
               Về chúng tôi

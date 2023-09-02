@@ -42,7 +42,7 @@ export default function Homepage() {
           <h1 className="mb-4 mt-12 text-3xl font-extrabold tracking-tight sm:text-4xl">
             Phần mềm thích ứng với mô hình Kinh doanh
           </h1>
-          <p className="text-lg text-primary-text">
+          <p className="text-lg">
             Sử dụng các công cụ, giải pháp được thiết kế tối ưu cho việc quản lý
             vận hành của Doanh nghiệp
           </p>
@@ -70,7 +70,7 @@ export default function Homepage() {
                 <p className="text-lg font-semibold leading-8">
                   {feature.name}
                 </p>
-                <p className="mt-2 text-md leading-7 text-primary-text">
+                <p className="mt-2 text-sm leading-7 text-mauve8">
                   {feature.description}
                 </p>
               </div>
