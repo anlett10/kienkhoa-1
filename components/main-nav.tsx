@@ -115,12 +115,33 @@ const MainNav = () => {
           </NavigationMenu.Item>
 
           <NavigationMenu.Item>
-            <NavigationMenu.Link
-              className="block select-none rounded-[4px] px-3 py-2 text-[15px] font-semibold leading-none text-indigo9 no-underline outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7"
-              href="/"
-            >
-              Quy trình
-            </NavigationMenu.Link>
+            <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-semibold leading-none text-indigo9 outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7">
+              Quy trình{" "}
+              <CaretDownIcon
+                className="relative top-[1px] text-indigo9 transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
+                aria-hidden
+              />
+            </NavigationMenu.Trigger>
+            <NavigationMenu.Content className="absolute left-0 top-0 w-full sm:w-auto">
+              <ul className="m-0 grid list-none gap-x-[10px] p-[22px] sm:w-[350px] sm:grid-flow-col sm:grid-rows-3">
+                <div className="border-t border-indigo-500">
+                  <ListItem title="Tìm hiểu" href="/">
+                    Tìm hiểu nhu cầu và mục tiêu của khách hàng
+                  </ListItem>
+                </div>
+                <div className="border-t border-indigo-500">
+                  <ListItem title="Phát triển" href="/">
+                    Xây dựng một lộ trình toàn diện để thực hiện giải pháp
+                  </ListItem>
+                </div>
+                <div className="border-t border-indigo-500">
+                  <ListItem title="Bàn giao" href="/">
+                    Đảm bảo rằng các trang chính của vận hành tốt nhất khi ra
+                    mắt
+                  </ListItem>
+                </div>
+              </ul>
+            </NavigationMenu.Content>
           </NavigationMenu.Item>
 
           <NavigationMenu.Item>

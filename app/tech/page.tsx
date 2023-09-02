@@ -19,7 +19,7 @@ export default function Tech() {
         </div>
       </div>
 
-      <div className="relative rounded-2xl isolate overflow-hidden bg-white px-6 py-20 sm:py-24 lg:overflow-visible lg:px-0">
+      <div className="relative rounded-2xl isolate overflow-hidden bg-white px-6 py-20 sm:py-16 lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
             className="absolute top-0 left-[max(50%,25rem)] h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -58,7 +58,7 @@ export default function Tech() {
                 <h1 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
                   Phát triển ứng dụng từ đầu
                 </h1>
-                <p className="mt-6 text-md leading-8 text-gray-700">
+                <p className="mt-4 text-md leading-8 text-gray-700">
                   Sử dụng các công nghệ phát triển web/mobile mạnh mẽ, đã được chứng
                   thực giúp đẩy nhanh quá trình xây dựng phát triển, vận hành hệ thống
                   đồng thời mang đến hiệu năng ổn định, trải nghiệm người dùng tốt nhất cho khách hàng.
@@ -116,9 +116,9 @@ export default function Tech() {
                     </span>
                   </li>
                 </ul>
-                <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
+                <h1 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
                   Nâng cấp ứng dụng Legacy
-                </h2>
+                </h1>
                 <p className="mt-6 text-md leading-8 text-gray-700">
                   Các hệ thống đang vận hành, cần nâng cấp mở rộng tính năng,
                   hoặc chuyển sang dùng các công nghệ mới phù hợp hơn. Chúng tôi
