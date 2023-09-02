@@ -126,7 +126,7 @@ const MainNav = () => {
               <ul className="m-0 grid list-none gap-x-[10px] p-[22px] sm:w-[350px] sm:grid-flow-col sm:grid-rows-3">
                 <div className="border-t border-indigo-500">
                   <ListItem title="Tìm hiểu" href="/">
-                    Tìm hiểu nhu cầu và mục tiêu của khách hàng
+                    Phân tích nhu cầu và mục tiêu của khách hàng
                   </ListItem>
                 </div>
                 <div className="border-t border-indigo-500">
@@ -136,8 +136,7 @@ const MainNav = () => {
                 </div>
                 <div className="border-t border-indigo-500">
                   <ListItem title="Bàn giao" href="/">
-                    Đảm bảo rằng các trang chính của vận hành tốt nhất khi ra
-                    mắt
+                    Đảm bảo ứng dụng vận hành tốt nhất khi ra mắt
                   </ListItem>
                 </div>
               </ul>
