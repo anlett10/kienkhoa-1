@@ -41,7 +41,7 @@ export default function ActionTabs() {
   });
 
   return (
-    <div className="w-full max-w-5xl px-2 sm:px-0">
+    <div className="w-full max-w-5xl">
       <Tab.Group>
         <Tab.List className="flex space-x-1 rounded-xl bg-slate-600 p-1">
           {Object.keys(categories).map((category) => (

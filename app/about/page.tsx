@@ -32,7 +32,7 @@ export default function About() {
           Dự tính chi phí cơ bản của một số gói dịch vụ
         </p>
       </div>
-      <div className="border-gray-200 px-6">
+      <div className="border-gray-200 px-4 sm:px-6">
         <dl>
           <div className="rounded-t-2xl bg-gray-100 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
             <dt className="font-small text-sm text-gray-700">
@@ -112,11 +112,11 @@ export default function About() {
           </div>
         </dl>
       </div>
-      <div className="mx-auto flex w-full flex-col px-3 pb-2 pt-12 md:flex-row xl:max-w-screen-xl">
-        <div className="flex h-full flex-col px-2 md:w-full lg:w-1/2 2xl:w-2/6">
+      <div className="mx-auto flex w-full flex-col pb-2 pt-12 md:flex-row xl:max-w-screen-xl">
+        <div className="flex h-full flex-col px-4 md:w-full lg:w-1/2 2xl:w-2/6">
           <ContactInfo />
         </div>
-        <div className="flex h-full flex-col px-2 md:w-full lg:w-1/2 2xl:w-2/6">
+        <div className="flex h-full flex-col px-4 md:w-full lg:w-1/2 2xl:w-2/6">
           <CalCom />
         </div>
       </div>
