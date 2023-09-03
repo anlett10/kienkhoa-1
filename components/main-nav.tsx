@@ -136,7 +136,8 @@ const MainNav = () => {
                 </div>
                 <div className="border-t border-indigo-500">
                   <ListItem title="Bàn giao" href="/">
-                    Đảm bảo ứng dụng vận hành tốt nhất khi ra mắt
+                    Đảm bảo ứng dụng chạy êm mượt, tính năng như thiết kế khi ra
+                    mắt
                   </ListItem>
                 </div>
               </ul>
