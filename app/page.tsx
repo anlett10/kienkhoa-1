@@ -16,7 +16,7 @@ export default function Homepage() {
       <Container className=" py-[6.4rem]">
         <Hero>
           <HeroTitle className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-            Kiến Khoa tạo giải pháp
+            Kiến Khoa xây ứng dụng
             <br className="hidden md:block" /> phù hợp với Doanh nghiệp
           </HeroTitle>
           <HeroSubtitle className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
