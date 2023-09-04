@@ -1,8 +1,8 @@
 "use client";
 
 import {
-  CloudArrowUpIcon,
   GlobeAltIcon,
+  DevicePhoneMobileIcon,
   Squares2X2Icon,
 } from "@heroicons/react/20/solid";
 
@@ -79,7 +79,7 @@ export default function Tech() {
                 <ul role="list" className="space-y-8">
                   <li className="flex gap-x-3">
                     <GlobeAltIcon
-                      className="mt-1 h-5 w-5 flex-none text-indigo-600"
+                      className="mt-1 h-8 w-8 flex-none text-indigo-600"
                       aria-hidden="true"
                     />
                     <span className="text-mauve11">
@@ -90,8 +90,8 @@ export default function Tech() {
                     </span>
                   </li>
                   <li className="flex gap-x-3">
-                    <CloudArrowUpIcon
-                      className="mt-1 h-5 w-5 flex-none text-indigo-600"
+                    <DevicePhoneMobileIcon
+                      className="mt-1 h-8 w-8 flex-none text-indigo-600"
                       aria-hidden="true"
                     />
                     <span className="text-mauve11">
@@ -104,7 +104,7 @@ export default function Tech() {
                   </li>
                   <li className="flex gap-x-3">
                     <Squares2X2Icon
-                      className="mt-1 h-5 w-5 flex-none text-indigo-600"
+                      className="mt-1 h-8 w-8 flex-none text-indigo-600"
                       aria-hidden="true"
                     />
                     <span className="text-mauve11">
