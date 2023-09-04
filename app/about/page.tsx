@@ -112,11 +112,11 @@ export default function About() {
           </div>
         </dl>
       </div>
-      <div className="mx-auto flex w-full flex-col pb-2 pt-12 md:flex-row lg:max-w-screen-xl">
-        <div className="flex h-full flex-col px-6 md:w-full lg:w-1/2">
+      <div className="mx-auto flex w-full flex-col pb-2 pt-12 md:flex-row">
+        <div className="flex h-full flex-col px-4 md:w-full md:px-6">
           <ContactInfo />
         </div>
-        <div className="flex h-full flex-col px-6 md:w-full lg:w-1/2">
+        <div className="flex h-full flex-col px-4 md:w-full md:px-6">
           <CalCom />
         </div>
       </div>
