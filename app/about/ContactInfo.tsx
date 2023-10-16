@@ -21,7 +21,7 @@ const data = [
   {
     icon: PhoneIcon,
     name: "Mobile/Zalo",
-    description: "0867793496",
+    description: "091-1096539",
   },
 ];
 
