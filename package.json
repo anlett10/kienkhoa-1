@@ -14,7 +14,7 @@
     "class-variance-authority": "^0.7.0",
     "framer-motion": "^10.16.2",
     "js-cookie": "^3.0.1",
-    "next": "^14.0.0",
+    "next": "^14.0.5-canary.43",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-intersection-observer": "^9.5.2",
