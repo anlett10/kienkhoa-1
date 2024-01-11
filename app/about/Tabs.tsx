@@ -55,7 +55,7 @@ export default function Tabs() {
                   "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-500 focus:outline-none focus:ring-2",
                   selected
                     ? "bg-white text-gray-1000 shadow"
-                    : "hover:bg-white/[0.12] hover:text-gray-1000"
+                    : "hover:bg-white/[0.12] hover:text-gray-1000",
                 )
               }
             >
@@ -69,7 +69,7 @@ export default function Tabs() {
               key={idx}
               className={clsx(
                 "rounded-xl bg-gray-100 p-3",
-                "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-500 focus:outline-none focus:ring-2"
+                "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-500 focus:outline-none focus:ring-2",
               )}
             >
               <ul>
@@ -85,10 +85,10 @@ export default function Tabs() {
                       {post.title}
                     </dd>
                     <a
-                      href=""
+                      href="#"
                       className={clsx(
                         "absolute inset-0 rounded-md",
-                        "ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"
+                        "ring-blue-400 focus:z-10 focus:outline-none focus:ring-2",
                       )}
                     />
                   </li>
