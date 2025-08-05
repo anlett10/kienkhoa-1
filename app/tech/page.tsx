@@ -163,7 +163,7 @@ export default function Tech() {
                     </div>
                     <div className="flex items-center gap-3 group/item">
                       <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
-                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">Tamgaui/Nativewind</span>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">Tamagui/Nativewind</span>
                     </div>
                   </div>
                 </div>

@@ -50,7 +50,7 @@ const productData1 = {
 const productData2 = {
   id: "ts-starter",
   title: "TS Starter - Full-Stack TypeScript Template",
-  client: "Open Source Project",
+  client: "Indie devs, Startups",
   sector: "Developer Tools",
   year: "2024 - 2025",
   featured_image: "/product2-f1.png",

@@ -72,7 +72,7 @@ export function Footer() {
               <Sparkles className="w-4 h-4 text-white" />
             </div>
             <span className="text-sm text-muted-foreground">
-              &copy; 2024 Kien Khoa Software. All rights reserved.
+              &copy; 2025 Kien Khoa Software. All rights reserved.
             </span>
           </div>
         </div>
