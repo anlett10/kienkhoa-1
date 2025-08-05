@@ -3,13 +3,13 @@ const reviews = [
     id: '1',
     name: 'Minh Ng',
     rating: 5,
-    text: 'Hàng chất lương, giá cả cạnh tranh với dịch vụ tốt nhất 5 sao',
+    text: 'High quality products, competitive prices with excellent service 5 stars',
   },
   {
     id: '2',
-    name: 'Ngọc Minh',
+    name: 'Ngoc Minh',
     rating: 3,
-    text: 'Hàng đỉnh nhưng giá chưa phải tốt nhất',
+    text: 'Top quality products but prices could be better',
   },
   {
     id: '3',

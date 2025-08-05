@@ -5,7 +5,6 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
   content: [
     "./components/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.{ts,tsx}",
@@ -28,246 +27,91 @@ module.exports = {
           ...defaultTheme.fontFamily.mono,
         ],
       },
-      fontSize: {
-        xs: "1.2rem",
-        sm: "1.4rem",
-        md: "1.6rem",
-        lg: "1.8rem",
-        xl: ["2.2rem", "1.3"],
-        "2xl": "2.4rem",
-        "3xl": "2.6rem",
-        "4xl": "3.2rem",
-        "5xl": "4rem",
-        "6xl": ["4.4rem", "1"],
-        "7xl": ["4.8rem", "1"],
-        "8xl": ["8rem", "1"],
-      },
       colors: {
-        transparent: "transparent",
-        white: "#fff",
-        "off-white": "#f7f8f8",
-        "transparent-white": "rgba(255, 255, 255, 0.08)",
-        background: "rgb(51 65 85)",
-        grey: "#858699",
-        "grey-dark": "#222326",
-        "primary-text": "#b4bcd0",
-        gray: colors.zinc,
-        "gray-1000": "rgb(17,17,19)",
-        "gray-1100": "rgb(10,10,11)",
-        vercel: {
-          pink: "#FF0080",
-          blue: "#0070F3",
-          cyan: "#50E3C2",
-          orange: "#F5A623",
-          violet: "#7928CA",
-        },
+        ...colors,
         ...blackA,
         ...mauve,
         ...violet,
-        ...purple,
         ...indigo,
+        ...purple,
+        transparentWhite: "rgba(255, 255, 255, 0.08)",
+        navigationHeight: "var(--navigation-height)",
+        containerSize: "var(--container-size)",
       },
       spacing: {
-        0: "0",
-        1: "0.4rem",
-        2: "0.8rem",
-        3: "1.2rem",
-        4: "1.6rem",
-        5: "2rem",
-        6: "2.4rem",
-        7: "2.8rem",
-        8: "3.2rem",
-        9: "3.6rem",
-        10: "4rem",
-        11: "4.4rem",
-        12: "4.8rem",
         "navigation-height": "var(--navigation-height)",
       },
-      backgroundImage: ({ theme }) => ({
-        "primary-gradient":
-          "linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%)",
-        "page-gradient":
-          "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), transparent)",
-        "hero-gradient":
-          "radial-gradient(ellipse 50% 80% at 20% 40%,rgba(93,52,221,0.1),transparent), radial-gradient(ellipse 50% 80% at 80% 50%,rgba(120,119,198,0.15),transparent)",
-        "hero-glow":
-          "conic-gradient(from 230.29deg at 51.63% 52.16%, rgb(36, 0, 255) 0deg, rgb(0, 135, 255) 67.5deg, rgb(108, 39, 157) 198.75deg, rgb(24, 38, 163) 251.25deg, rgb(54, 103, 196) 301.88deg, rgb(105, 30, 255) 360deg)",
-        "glow-lines":
-          "linear-gradient(var(--direction),#9d9bf2 0.43%,#7877c6 14.11%,rgba(120,119,198,0) 62.95%)",
-        "vc-border-gradient": `radial-gradient(at left top, ${theme(
-          "colors.gray.500"
-        )}, 50px, ${theme("colors.gray.800")} 50%)`,
-      }),
-      boxShadow: {
-        primary: "rgb(80 63 205 / 50%) 0px 1px 40px",
-      },
-      transitionDelay: {
-        0: "0ms",
-      },
-      keyframes: ({ theme }) => ({
-        enterFromRight: {
-          from: { opacity: 0, transform: "translateX(200px)" },
-          to: { opacity: 1, transform: "translateX(0)" },
-        },
-        enterFromLeft: {
-          from: { opacity: 0, transform: "translateX(-200px)" },
-          to: { opacity: 1, transform: "translateX(0)" },
-        },
-        exitToRight: {
-          from: { opacity: 1, transform: "translateX(0)" },
-          to: { opacity: 0, transform: "translateX(200px)" },
-        },
-        exitToLeft: {
-          from: { opacity: 1, transform: "translateX(0)" },
-          to: { opacity: 0, transform: "translateX(-200px)" },
-        },
-        scaleIn: {
-          from: { opacity: 0, transform: "rotateX(-10deg) scale(0.9)" },
-          to: { opacity: 1, transform: "rotateX(0deg) scale(1)" },
-        },
-        scaleOut: {
-          from: { opacity: 1, transform: "rotateX(0deg) scale(1)" },
-          to: { opacity: 0, transform: "rotateX(-10deg) scale(0.95)" },
-        },
-        fadeIn: {
-          from: { opacity: 0 },
-          to: { opacity: 1 },
-        },
-        fadeOut: {
-          from: { opacity: 1 },
-          to: { opacity: 0 },
-        },
-        "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
-        },
-        "fade-in": {
-          from: { opacity: 0, transform: "translateY(-10px)" },
-          to: { opacity: 1, transform: "none" },
-        },
-        "image-rotate": {
-          "0%": { transform: "rotateX(25deg)" },
-          "25%": { transform: "rotateX(25deg) scale(0.9)" },
-          "60%": { transform: "none" },
-          "100%": { transform: "none" },
-        },
-        "image-glow": {
-          "0%": {
-            opacity: 0,
-            "animation-timing-function": "cubic-bezier(0.74,0.25,0.76,1)",
-          },
-          "10%": {
-            opacity: 1,
-            "animation-timing-function": "cubic-bezier(0.12,0.01,0.08,0.99)",
-          },
-          "100%": {
-            opacity: 0.2,
-          },
-        },
-        "sketch-lines": {
-          "0%": { "stroke-dashoffset": 1 },
-          "50%": { "stroke-dashoffset": 0 },
-          "99%": { "stroke-dashoffset": 0 },
-          "100%": { visibility: "hidden" },
-        },
-        "glow-line-horizontal": {
-          "0%": { opacity: 0, transform: "translateX(0)" },
-          "5%": { opacity: 1, transform: "translateX(0)" },
-          "90%": { opacity: 1 },
-          "100%": { opacity: 0, transform: "translateX(min(60vw, 45rem))" },
-        },
-        "glow-line-vertical": {
-          "0%": { opacity: 0, transform: "translateY(0)" },
-          "5%": { opacity: 1, transform: "translateY(0)" },
-          "90%": { opacity: 1 },
-          "100%": { opacity: 0, transform: "translateY(min(21vw, 45rem))" },
-        },
-        rerender: {
-          "0%": {
-            ["border-color"]: theme("colors.vercel.pink"),
-          },
-          "40%": {
-            ["border-color"]: theme("colors.vercel.pink"),
-          },
-        },
-        highlight: {
-          "0%": {
-            background: theme("colors.vercel.pink"),
-            color: theme("colors.white"),
-          },
-          "40%": {
-            background: theme("colors.vercel.pink"),
-            color: theme("colors.white"),
-          },
-        },
-        shimmer: {
-          "100%": {
-            transform: "translateX(100%)",
-          },
-        },
-        translateXReset: {
-          "100%": {
-            transform: "translateX(0)",
-          },
-        },
-        fadeToTransparent: {
-          "0%": {
-            opacity: 1,
-          },
-          "40%": {
-            opacity: 1,
-          },
-          "100%": {
-            opacity: 0,
-          },
-        },
-      }),
       animation: {
-        scaleIn: "scaleIn 200ms ease",
-        scaleOut: "scaleOut 200ms ease",
-        fadeIn: "fadeIn 200ms ease",
-        fadeOut: "fadeOut 200ms ease",
-        enterFromLeft: "enterFromLeft 250ms ease",
-        enterFromRight: "enterFromRight 250ms ease",
-        exitToLeft: "exitToLeft 250ms ease",
-        exitToRight: "exitToRight 250ms ease",
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 1000ms var(--animation-delay, 0ms) ease forwards",
-        "image-rotate": "image-rotate 1400ms ease forwards",
-        "image-glow": "image-glow 4100ms 600ms ease-out forwards",
-        "sketch-lines": "sketch-lines 1200ms ease-out forwards",
-        "glow-line-horizontal":
-          "glow-line-horizontal var(--animation-duration) ease-in forwards",
-        "glow-line-vertical":
-          "glow-line-vertical var(--animation-duration) ease-in forwards",
+        "fade-in": "fade-in 0.5s ease-out",
+        "slide-in": "slide-in 0.5s ease-out",
+        "slide-in-from-top": "slide-in-from-top 0.5s ease-out",
+        "slide-in-from-bottom": "slide-in-from-bottom 0.5s ease-out",
+        "slide-in-from-left": "slide-in-from-left 0.5s ease-out",
+        "slide-in-from-right": "slide-in-from-right 0.5s ease-out",
+      },
+      keyframes: {
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        "slide-in": {
+          "0%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        "slide-in-from-top": {
+          "0%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        "slide-in-from-bottom": {
+          "0%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        "slide-in-from-left": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        "slide-in-from-right": {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
       },
     },
   },
-  typography: () => ({
-    DEFAULT: {
-      css: {
-        h2: {
-          fontWeight: 600,
-        },
-        a: {
-          fontWeight: 600,
-        },
-      },
-    },
-  }),
   plugins: [
-    plugin(({ matchUtilities }) => {
-      matchUtilities({
-        perspective: (value) => ({
-          perspective: value,
-        }),
+    plugin(({ addUtilities }) => {
+      addUtilities({
+        ".text-shadow": {
+          textShadow: "rgb(0 0 0 / 56%) 0px 3px 12px",
+        },
+        ".slide-center": {
+          transform:
+            "translateX(calc(max(var(--container-size), 100vw) / 2 - calc(var(--container-size) / 2)))",
+        },
+        ".text-gradient": {
+          background:
+            "linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.38))",
+          backgroundClip: "text",
+          color: "transparent",
+        },
+        ".bg-page-gradient": {
+          background:
+            "radial-gradient(ellipse 80% 50% at 50% -20%, hsl(var(--primary) / 15%), transparent)",
+        },
+        ".bg-hero-gradient": {
+          background:
+            "radial-gradient(ellipse 50% 80% at 50% -20%, hsl(var(--primary) / 15%), transparent)",
+        },
+        ".bg-hero-glow": {
+          background:
+            "radial-gradient(ellipse 50% 80% at 50% -20%, hsl(var(--primary) / 25%), transparent)",
+        },
+        ".bg-primary-gradient": {
+          background:
+            "linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary) / 0.8) 100%)",
+        },
       });
     }),
-    require("@tailwindcss/typography"),
   ],
 };
+
+

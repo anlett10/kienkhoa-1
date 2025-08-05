@@ -51,7 +51,7 @@ export const HeroImage = () => {
   }, [inView, setLines]);
 
   return (
-    <div ref={ref} className="mt-[8.8rem] [perspective:2000px] sm:mt-[10.8rem]">
+    <div ref={ref} className="mt-[4rem] [perspective:2000px] sm:mt-[5rem] max-w-4xl mx-auto">
       <div
         className={clsx(
           "relative rounded-lg border border-transparent-white bg-white bg-opacity-[0.01] bg-hero-gradient",

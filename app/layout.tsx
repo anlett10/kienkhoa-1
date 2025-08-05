@@ -1,5 +1,4 @@
 import { Analytics } from "../components/analytics";
-import { CopyrightBanner } from "../components/copyright-banner";
 import { Footer } from "../components/footer";
 import { SiteHeader } from "../components/site-header";
 import "../styles/globals.css";
@@ -8,9 +7,9 @@ import type { Metadata } from "next";
 
 const SITE_URL = process.env.NEXT_PUBLIC_DEFAULT_SITE_URL || "localhost:3000";
 
-const defaultTitle = "Kiến Khoa — Build Solid Applications";
+const defaultTitle = "Kien Khoa — Build Solid Applications";
 const defaultDescription =
-  "Websites, ứng dụng web, mobile tốt nhất cho Doanh nghiệp";
+  "Websites, web applications, mobile apps for Businesses";
 
 const fontsBasePath = "/fonts";
 const fontsPaths = [
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <head>
         <meta
           name="viewport"
@@ -51,13 +50,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         ))}
       </head>
       <body>
-        <div>
+        <div className="relative">
           <SiteHeader />
-          <main className="bg-page-gradient pt-navigation-height">
-            <div className="rounded-lg bg-slate-500 p-4 lg:p-8">{children}</div>
+          <main className="pt-[calc(var(--navigation-height)+1rem)]">
+            {children}
           </main>
           <Footer />
-          <CopyrightBanner />
         </div>
         <Analytics />
       </body>

@@ -5,32 +5,36 @@ import React from "react";
 import { CartCount } from "../../CartCount";
 import { CartCountProvider } from "../../CartCountContext";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
-  const cartCount = Number(cookies().get("_cart_count")?.value || "0");
+export default async function Layout({ children }: { children: React.ReactNode }) {
+  const cartCount = Number((await cookies()).get("_cart_count")?.value || "0");
 
   return (
     <CartCountProvider initialCartCount={cartCount}>
       <div className="space-y-12 lg:space-y-16">
-        <div className="flex items-center justify-between space-x-3 rounded-lg bg-slate-600 px-3 py-3 lg:px-5 lg:py-4">
-          <div className="flex space-x-3">
-            <div className="relative flex-1"></div>
-          </div>
-
-          <div className="flex shrink-0 space-x-5">
-            <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-600 text-white">
-              <ShoppingCartIcon className="w-6 text-white" />
-              <div className="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-vercel-cyan text-sm font-bold text-white">
-                <CartCount />
-              </div>
+        <div className="pt-8">
+          <div className="flex items-center justify-between space-x-3 rounded-xl bg-card border border-border px-4 py-4 lg:px-6 lg:py-5 shadow-lg">
+            <div className="flex space-x-3">
+              <div className="relative flex-1"></div>
             </div>
 
-            <Image
-              src="/prince-akachi-LWkFHEGpleE-unsplash.jpg"
-              className="rounded-full"
-              width={40}
-              height={40}
-              alt="User"
-            />
+            <div className="flex shrink-0 space-x-5">
+              <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-muted hover:bg-accent transition-colors duration-200">
+                <ShoppingCartIcon className="w-6 text-foreground" />
+                <div className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
+                  <CartCount />
+                </div>
+              </div>
+
+              <div className="relative">
+                <Image
+                  src="/prince-akachi-LWkFHEGpleE-unsplash.jpg"
+                  className="rounded-full border-2 border-border hover:border-primary/50 transition-colors duration-200"
+                  width={40}
+                  height={40}
+                  alt="User"
+                />
+              </div>
+            </div>
           </div>
         </div>
 

@@ -32,7 +32,7 @@ export const Header = () => {
     <header className="fixed left-0 top-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
         <Link className="flex items-center text-md" href="/">
-          <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> Kiến Khoa
+          <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> Kien Khoa
         </Link>
 
         <div className="ml-auto flex h-full items-center">
@@ -85,7 +85,7 @@ export const Header = () => {
                       className="translate-y-[-1rem] animate-fade-in opacity-0"
                       onClick={() => setHamburgerMenuIsOpen(false)}
                     >
-                      Về chúng tôi
+                      About Us
                     </Button>
                   </li>
                   <li>

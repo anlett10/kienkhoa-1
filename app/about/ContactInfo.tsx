@@ -1,55 +1,70 @@
 "use client";
 
-import { ExternalLink } from "@/ui/ExternalLink";
-import {
-  MapPinIcon,
-  EnvelopeIcon,
-  PhoneIcon,
-} from "@heroicons/react/24/outline";
-const mapImage = "/all/map-image.png";
-const data = [
-  {
-    icon: MapPinIcon,
-    name: "Địa chỉ",
-    description: "135/1/126 Nguyễn Hữu Cảnh, Bình Thạnh TP.HCM",
-  },
-  {
-    icon: EnvelopeIcon,
-    name: "Email",
-    description: "an@kienkhoa.com",
-  },
-  {
-    icon: PhoneIcon,
-    name: "Mobile/Zalo",
-    description: "091-1096539",
-  },
-];
+import { MapPinIcon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
-const ContactInfo = () => {
+export default function ContactInfo() {
   return (
-    <div className="mb-6 border-blackA8 lg:rounded-md lg:border lg:p-7">
-      <h4 className="text-heading -mt-1 pb-7 text-lg font-bold md:pb-10 lg:pb-6">
-        Kết nối với Kiến Khoa:
-      </h4>
-      {data.map((info) => (
-        <div
-          key={info.name}
-          className="relative flex flex-col gap-4 pb-7 sm:flex-row md:flex-col lg:flex-row"
-        >
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-500 text-white sm:shrink-0">
-            <info.icon className="h-5 w-5" aria-hidden="true" />
+    <div className="space-y-8">
+      {/* Header */}
+      <div className="text-center space-y-4">
+        <h3 className="text-2xl font-bold text-foreground">
+          Connect with Kien Khoa
+        </h3>
+        <p className="text-muted-foreground">
+          Get in touch with our team for consultation and project discussions
+        </p>
+      </div>
+
+      {/* Contact Information */}
+      <div className="space-y-6">
+        {/* Address */}
+        <div className="flex items-start space-x-4 group hover:bg-muted/30 p-4 rounded-lg transition-colors duration-200">
+          <div className="p-3 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
+            <MapPinIcon className="h-6 w-6 text-primary" />
           </div>
-          <div className="sm:min-w-0 sm:flex-1">
-            <p className="text-sm font-semibold leading-7">{info.name}</p>
-            <p className="text-sm leading-7 text-mauve8">{info.description}</p>
+          <div className="flex-1">
+            <h4 className="font-semibold text-foreground mb-2">Office Address</h4>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Ho Chi Minh City, Vietnam<br />
+              Available for remote work and client meetings
+            </p>
           </div>
         </div>
-      ))}
-      <ExternalLink href="https://www.google.com/maps">
-        <img src={mapImage} alt={"text-map"} className="rounded-md" />
-      </ExternalLink>
+
+        {/* Email */}
+        <div className="flex items-start space-x-4 group hover:bg-muted/30 p-4 rounded-lg transition-colors duration-200">
+          <div className="p-3 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
+            <EnvelopeIcon className="h-6 w-6 text-primary" />
+          </div>
+          <div className="flex-1">
+            <h4 className="font-semibold text-foreground mb-2">Email Contact</h4>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              <a 
+                href="mailto:contact@kienkhoa.com" 
+                className="text-primary hover:text-primary/80 transition-colors duration-200"
+              >
+                contact@kienkhoa.com
+              </a>
+              <br />
+              We respond within 24 hours
+            </p>
+          </div>
+        </div>
+
+        {/* Phone */}
+        <div className="flex items-start space-x-4 group hover:bg-muted/30 p-4 rounded-lg transition-colors duration-200">
+          <div className="p-3 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
+            <PhoneIcon className="h-6 w-6 text-primary" />
+          </div>
+          <div className="flex-1">
+            <h4 className="font-semibold text-foreground mb-2">Phone Support</h4>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Available for urgent consultations<br />
+              Schedule a call through our booking system
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
-};
-
-export default ContactInfo;
+}

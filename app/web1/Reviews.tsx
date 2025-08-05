@@ -7,10 +7,10 @@ const shimmer = `relative overflow-hidden before:absolute before:inset-0 before:
 function Skeleton() {
   return (
     <div className={`space-y-4`}>
-      <div className="h-6 w-2/6 rounded-lg bg-slate-600" />
-      <div className="h-4 w-1/6 rounded-lg bg-slate-600" />
-      <div className="h-4 w-full rounded-lg bg-slate-600" />
-      <div className="h-4 w-4/6 rounded-lg bg-slate-600" />
+      <div className="h-6 w-2/6 rounded-lg bg-muted" />
+      <div className="h-4 w-1/6 rounded-lg bg-muted" />
+      <div className="h-4 w-full rounded-lg bg-muted" />
+      <div className="h-4 w-4/6 rounded-lg bg-muted" />
     </div>
   );
 }
@@ -18,7 +18,7 @@ function Skeleton() {
 export function ReviewsSkeleton() {
   return (
     <div className="space-y-6">
-      <div className={`h-7 w-2/5 rounded-lg bg-slate-600 ${shimmer}`} />
+      <div className={`h-7 w-2/5 rounded-lg bg-muted ${shimmer}`} />
 
       <div className="space-y-8">
         <Skeleton />
@@ -33,8 +33,11 @@ export async function Reviews() {
   await delay(1500);
 
   return (
-    <div className="space-y-6">
-      <div className="text-lg font-medium text-white">Khách hàng Reviews</div>
+    <div className="space-y-8">
+      <div className="border-b border-border pb-4">
+        <h2 className="text-2xl font-semibold text-foreground">Customer Reviews</h2>
+        <p className="text-muted-foreground mt-2">Reviews from customers who have used the product</p>
+      </div>
       <div className="space-y-8">
         {reviews.map((review) => {
           return <ProductReviewCard key={review.id} review={review} />;

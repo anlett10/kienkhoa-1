@@ -17,8 +17,8 @@ const buttonClasses = cva("relative rounded-full inline-flex items-center", {
         "[&_.icon-wrapper]:ml-2",
       ],
       secondary: [
-        "text-off-white bg-white bg-opacity-10 border border-transparent-white backdrop-filter-[12px] hover:bg-opacity-30 transition-colors ease-in",
-        "[&_.icon-wrapper]:bg-transparent-white [&_.icon-wrapper]:rounded-full [&_.icon-wrapper]:px-2 [&_.icon-wrapper]:ml-2 [&_.icon-wrapper]:-mr-2",
+        "text-foreground bg-white/10 dark:bg-white/5 border border-border/50 backdrop-blur-sm hover:bg-white/20 dark:hover:bg-white/10 transition-all duration-200",
+        "[&_.icon-wrapper]:bg-border [&_.icon-wrapper]:rounded-full [&_.icon-wrapper]:px-2 [&_.icon-wrapper]:ml-2 [&_.icon-wrapper]:-mr-2",
       ],
     },
     size: {

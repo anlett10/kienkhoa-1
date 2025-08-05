@@ -32,7 +32,7 @@ function LoadingDots() {
 export function PricingSkeleton() {
   return (
     <div
-      className={`h-[161px] space-y-4 rounded-lg bg-slate-600 ${shimmer}`}
+      className={`h-[161px] space-y-4 rounded-xl bg-muted ${shimmer}`}
     ></div>
   );
 }
@@ -49,24 +49,29 @@ export async function Pricing({
   await delay(500);
 
   return (
-    <div className="space-y-4 rounded-lg bg-slate-600 p-3">
-      <ProductPrice price={price} discount={product.discount} />
-      <ProductSplitPayments price={price} />
-      {product.usedPrice ? (
-        <ProductUsedPrice usedPrice={product.usedPrice} />
-      ) : null}
+    <div className="space-y-6 rounded-xl bg-card border border-border p-6 shadow-lg">
+      <div className="space-y-4">
+        <ProductPrice price={price} discount={product.discount} />
+        <ProductSplitPayments price={price} />
+        {product.usedPrice ? (
+          <ProductUsedPrice usedPrice={product.usedPrice} />
+        ) : null}
+      </div>
+      
       <div className="relative">
         <div className="absolute top-1 -left-4">
           <Ping />
         </div>
       </div>
+      
       <Suspense fallback={<LoadingDots />}>
         <ProductEstimatedArrival leadTime={product.leadTime} hasDeliveryTime />
         {product.stock <= 1 ? (
           <ProductLowStockWarning stock={product.stock} />
         ) : null}
       </Suspense>
-      <div className="space-y-2">
+      
+      <div className="space-y-2 pt-2">
         <AddToCart initialCartCount={Number(cartCount)} />
       </div>
     </div>

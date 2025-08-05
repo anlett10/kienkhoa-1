@@ -20,7 +20,7 @@ export const ProductCard = ({
 
   return (
     <Link href={href} className="group block">
-      <div className="space-y-2">
+      <div className="space-y-3 p-4 rounded-xl bg-card/50 dark:bg-card border border-border/50 dark:border-border hover:border-primary/50 hover:shadow-lg transition-all duration-300">
         <div className="relative">
           {product.isBestSeller ? (
             <div className="absolute top-2 left-2 z-10 flex">
@@ -31,32 +31,34 @@ export const ProductCard = ({
             src={`/${product.image}`}
             width={400}
             height={400}
-            className="rounded-xl grayscale group-hover:opacity-80"
+            className="rounded-lg grayscale group-hover:opacity-80 group-hover:grayscale-0 transition-all duration-300"
             alt={product.name}
             placeholder="blur"
             blurDataURL={product.imageBlur}
           />
         </div>
 
-        <div className="truncate text-sm font-medium text-white group-hover:text-vercel-cyan">
-          {product.name}
+        <div className="space-y-2">
+          <div className="truncate text-sm font-semibold text-foreground group-hover:text-primary transition-colors duration-200">
+            {product.name}
+          </div>
+
+          {product.rating ? <ProductRating rating={product.rating} /> : null}
+
+          <ProductPrice price={price} discount={product.discount} />
+
+          {/* <ProductSplitPayments price={price} /> */}
+
+          {product.usedPrice ? (
+            <ProductUsedPrice usedPrice={product.usedPrice} />
+          ) : null}
+
+          <ProductEstimatedArrival leadTime={product.leadTime} />
+
+          {product.stock <= 1 ? (
+            <ProductLowStockWarning stock={product.stock} />
+          ) : null}
         </div>
-
-        {product.rating ? <ProductRating rating={product.rating} /> : null}
-
-        <ProductPrice price={price} discount={product.discount} />
-
-        {/* <ProductSplitPayments price={price} /> */}
-
-        {product.usedPrice ? (
-          <ProductUsedPrice usedPrice={product.usedPrice} />
-        ) : null}
-
-        <ProductEstimatedArrival leadTime={product.leadTime} />
-
-        {product.stock <= 1 ? (
-          <ProductLowStockWarning stock={product.stock} />
-        ) : null}
       </div>
     </Link>
   );

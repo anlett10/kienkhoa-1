@@ -8,124 +8,259 @@ import {
 
 export default function Tech() {
   return (
-    <div className="space-y-8">
-      <div className="space-y-4">
-        <h1 className="text-lg font-medium">Công nghệ phát triển web</h1>
-        <div className="space-y-4">
-          <ul className="list-disc space-y-2 pl-4 text-sm text-gray-300">
-            <li>Ngôn ngữ lập trình sử dụng</li>
-            <li>Dữ liệu và môi trường triển khai</li>
-          </ul>
-        </div>
-      </div>
+    <div className="min-h-screen bg-background">
+      <div className="container mx-auto px-6 py-16">
+        <div className="space-y-20">
+          {/* Header Section */}
+          <div className="text-center space-y-8">
+            <div className="space-y-4">
+              <h1 className="text-5xl font-bold text-foreground bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
+                Technology Stack
+              </h1>
+              <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary/60 mx-auto rounded-full"></div>
+            </div>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Using modern and proven technologies to build high-quality applications.
+            </p>
+          </div>
 
-      <div className="relative rounded-2xl isolate overflow-hidden bg-white px-6 py-20 sm:py-16 lg:overflow-visible lg:px-0">
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <svg
-            className="absolute top-0 left-[max(50%,25rem)] h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
-            aria-hidden="true"
-          >
-            <defs>
-              <pattern
-                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
-                width={200}
-                height={200}
-                x="50%"
-                y={-1}
-                patternUnits="userSpaceOnUse"
-              >
-                <path d="M100 200V.5M.5 .5H200" fill="none" />
-              </pattern>
-            </defs>
-            <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
-              <path
-                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
-                strokeWidth={0}
-              />
-            </svg>
-            <rect
-              width="100%"
-              height="100%"
-              strokeWidth={0}
-              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
-            />
-          </svg>
-        </div>
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-10 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-          <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-full lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-            <div className="lg:pr-5">
-              <div className="lg:max-w-full">
-                <h1 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-                  Phát triển ứng dụng từ đầu
-                </h1>
-                <p className="mt-4 text-md leading-8 text-gray-700">
-                  Sử dụng các công nghệ phát triển web/mobile mạnh mẽ, đã được chứng
-                  thực giúp đẩy nhanh quá trình xây dựng phát triển, vận hành hệ thống
-                  đồng thời mang đến hiệu năng ổn định, trải nghiệm người dùng tốt nhất cho khách hàng.
-                </p>
+          {/* Technology Stack Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Web1 Card */}
+            <div className="group">
+              <div className="bg-card/50 dark:bg-card border border-border/50 dark:border-border rounded-xl p-8 hover:border-primary/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                {/* Subtle gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="p-3 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
+                      <GlobeAltIcon className="h-8 w-8 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground">Website</h3>
+                  </div>
+                  <h4 className="text-lg font-semibold text-foreground mb-4">
+                    Website Design
+                  </h4>
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    Building modern user interfaces with advanced design technologies.
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">Figma/Framer</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">ReactJS/Next</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">SanityIO</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">TailwindCSS</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">ShadCN UI</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">Vercel</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Web2 Card */}
+            <div className="group">
+              <div className="bg-card/50 dark:bg-card border border-border/50 dark:border-border rounded-xl p-8 hover:border-primary/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                {/* Subtle gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="p-3 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
+                      <DevicePhoneMobileIcon className="h-8 w-8 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground">Web Apps</h3>
+                  </div>
+                  <h4 className="text-lg font-semibold text-foreground mb-4">
+                    Web Applications
+                  </h4>
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    Developing Web applications with high performance and excellent user experience.
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">NextJS/TanStack Suite</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">TailwindCSSS/ShadCN UI</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">Better Auth</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">Triplit DB/Drizzle</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">oRPC/REST</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">Bun/Elysia/TS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Web3 Card */}
+            <div className="group">
+              <div className="bg-card/50 dark:bg-card border border-border/50 dark:border-border rounded-xl p-8 hover:border-primary/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                {/* Subtle gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="p-3 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
+                      <Squares2X2Icon className="h-8 w-8 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground">Mobile Apps</h3>
+                  </div>
+                  <h4 className="text-lg font-semibold text-foreground mb-4">
+                    Mobile Applications
+                  </h4>
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    Crafting mobile apps powered by proven technology.
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">React Native</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">Expo</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">React Native Reanimated</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">Sentry</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">Better Auth/Expo</span>
+                    </div>
+                    <div className="flex items-center gap-3 group/item">
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors duration-200">Tamgaui/Nativewind</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="-my-6 -ml-8 p-8 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-            <img
-              className="w-[40rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[64rem]"
-              src="/img/aboutUs.jpg"
-              alt=""
-            />
-          </div>
-          <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-full lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-            <div className="lg:pr-5">
-              <div className="max-w-xl text-sm leading-7 lg:max-w-full">
-                <ul role="list" className="space-y-8">
-                  <li className="flex gap-x-3">
-                    <GlobeAltIcon
-                      className="mt-1 h-8 w-8 flex-none text-indigo-600"
-                      aria-hidden="true"
-                    />
-                    <span className="text-mauve11">
-                      <strong className="font-semibold">
-                        Web1 - Thiết kế trang:
-                      </strong>{" "}
-                      Figma/Framer, ReactJS/Next, SanityIO, TailwindCSS, Tamagui, Vercel
-                    </span>
-                  </li>
-                  <li className="flex gap-x-3">
-                    <DevicePhoneMobileIcon
-                      className="mt-1 h-8 w-8 flex-none text-indigo-600"
-                      aria-hidden="true"
-                    />
-                    <span className="text-mauve11">
-                      <strong className="font-semibold">
-                        Web2 - Ứng dụng Web/Mobile:
-                      </strong>{" "}
-                      React Native/Expo, Swift/SwiftUI, ReactJS/Next, PostgreSQL/Prisma, 
-                      Convex, Bun/Elysia/TS
-                    </span>
-                  </li>
-                  <li className="flex gap-x-3">
-                    <Squares2X2Icon
-                      className="mt-1 h-8 w-8 flex-none text-indigo-600"
-                      aria-hidden="true"
-                    />
-                    <span className="text-mauve11">
-                      <strong className="font-semibold">
-                        Web3 - Ứng dụng Blockchain:
-                      </strong>{" "}
-                      Solana, Aptos, Sui Rust-based blockchains, viết smart
-                      contract dùng ngôn ngữ lập trình Move
-                    </span>
-                  </li>
-                </ul>
-                <h1 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                  Nâng cấp ứng dụng Legacy
-                </h1>
-                <p className="mt-6 text-md leading-8 text-gray-700">
-                  Các hệ thống đang vận hành, cần nâng cấp mở rộng tính năng,
-                  hoặc chuyển sang dùng các công nghệ mới phù hợp hơn. Chúng tôi
-                  mang đến các giải pháp hiệu quả nhất dựa trên kinh nghiệm xây
-                  dựng, năng lực của đội ngũ phát triển.
+
+          {/* Development Process Section */}
+          <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-2xl p-8 lg:p-12 border border-primary/20 relative overflow-hidden">
+            {/* Background pattern */}
+            <div className="absolute inset-0 opacity-5">
+              <div className="absolute inset-0" style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+              }}></div>
+            </div>
+            <div className="relative">
+              <div className="text-center space-y-6 mb-12">
+                <h2 className="text-3xl font-bold text-foreground">
+                  Application Development from Scratch
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                  Using powerful web/mobile development technologies that have been proven to accelerate the development process, 
+                  system operations while delivering stable performance and the best user experience for customers.
                 </p>
               </div>
+
+              {/* Process Steps */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="text-center space-y-4 group">
+                  <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto text-lg font-bold group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    1
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-200">Analysis</h3>
+                  <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-200">
+                    Understanding project requirements and objectives
+                  </p>
+                </div>
+                <div className="text-center space-y-4 group">
+                  <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto text-lg font-bold group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    2
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-200">Design</h3>
+                  <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-200">
+                    Creating detailed wireframes and mockups
+                  </p>
+                </div>
+                <div className="text-center space-y-4 group">
+                  <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto text-lg font-bold group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    3
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-200">Development</h3>
+                  <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-200">
+                    Coding and building the application
+                  </p>
+                </div>
+                <div className="text-center space-y-4 group">
+                  <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto text-lg font-bold group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    4
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-200">Deployment</h3>
+                  <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-200">
+                    Deploy and maintain the system
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Legacy Upgrade Section */}
+          <div className="bg-card/50 dark:bg-card border border-border/50 dark:border-border rounded-xl p-8 lg:p-12 hover:shadow-lg transition-all duration-300">
+            <div className="space-y-8">
+              <div className="text-center space-y-4">
+                <h2 className="text-3xl font-bold text-foreground">
+                  Legacy Application Upgrade
+                </h2>
+                <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary/60 mx-auto rounded-full"></div>
+              </div>
+              <p className="text-lg leading-relaxed text-muted-foreground text-center max-w-3xl mx-auto">
+                Systems currently in operation that need feature expansion upgrades, 
+                or migration to newer, more suitable technologies. We bring the most effective solutions 
+                based on our development experience and team capabilities.
+              </p>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center space-y-6">
+            <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-8 border border-primary/20 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-2xl font-semibold text-foreground mb-4">
+                Ready to start your project?
+              </h3>
+              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                Contact us for consultation and start building your application.
+              </p>
+              <button className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105">
+                Contact Now
+              </button>
             </div>
           </div>
         </div>

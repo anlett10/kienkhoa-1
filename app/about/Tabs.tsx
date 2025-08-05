@@ -1,103 +1,83 @@
 "use client";
 
 import { useState } from "react";
-import { Tab } from "@headlessui/react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import clsx from "clsx";
 
-export default function Tabs() {
+export default function TabsComponent() {
   let [categories] = useState({
-    "Tổng quan": [
+    "Overview": [
       {
         id: 1,
         title:
-          "Công nghệ làm thay đổi cách chúng ta giao tiếp, học hành, làm việc",
+          "Technology changes how we communicate, learn, and work",
       },
       {
         id: 2,
         title:
-          "Các ứng dụng web giúp Doanh nghiệp quản lý, vận hành, truyền thông tốt hơn ",
+          "Web applications help businesses manage, operate, and communicate better",
       },
     ],
-    "Mục tiêu": [
+    "Goals": [
       {
         id: 1,
-        title: "Đưa công nghệ phát triển web vào ứng dụng thực tế tại VN",
+        title: "Bring web development technology into real world applications",
       },
       {
         id: 2,
         title:
-          "Phát triển tốt hơn các ứng dụng web hiện tại, thử nghiệm mô hình ứng dụng mới",
+          "Provide better SaaS applications to B2C, and B2B customers",
       },
     ],
-    "Thị trường": [
+    "Market": [
       {
         id: 1,
-        title: "Hỗ trợ khách hàng phát triển kinh doanh tại Việt Nam",
+        title: "Help customers with product development for their businesses",
       },
       {
         id: 2,
         title:
-          "Doanh nghiệp có yêu cầu đặt hàng, gia công hoàn thiện ứng dụng web mobile",
+          "Build SaaS that targets to devs, B2C and B2B customers",
       },
     ],
   });
 
   return (
-    <div className="w-full max-w-5xl">
-      <Tab.Group>
-        <Tab.List className="flex space-x-1 rounded-xl bg-slate-600 p-1">
+    <div className="w-full">
+      <Tabs defaultValue="Overview" className="w-full">
+        <TabsList className="grid w-full grid-cols-3">
           {Object.keys(categories).map((category) => (
-            <Tab
-              key={category}
-              className={({ selected }) =>
-                clsx(
-                  "font-small w-full rounded-lg py-2.5 text-sm leading-5",
-                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-500 focus:outline-none focus:ring-2",
-                  selected
-                    ? "bg-white text-gray-1000 shadow"
-                    : "hover:bg-white/[0.12] hover:text-gray-1000",
-                )
-              }
-            >
+            <TabsTrigger key={category} value={category}>
               {category}
-            </Tab>
+            </TabsTrigger>
           ))}
-        </Tab.List>
-        <Tab.Panels className="mt-2">
-          {Object.values(categories).map((posts, idx) => (
-            <Tab.Panel
-              key={idx}
-              className={clsx(
-                "rounded-xl bg-gray-100 p-3",
-                "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-500 focus:outline-none focus:ring-2",
-              )}
-            >
-              <ul>
-                {posts.map((post) => (
-                  <li
-                    key={post.id}
-                    className="relative rounded-md p-3 hover:bg-gray-400"
-                  >
-                    {/* <h3 className="text-sm leading-5 text-gray-700">
-                      {post.title}
-                    </h3> */}
-                    <dd className="mt-0 text-sm text-gray-700 sm:col-span-2">
-                      {post.title}
-                    </dd>
-                    <a
-                      href="#"
-                      className={clsx(
-                        "absolute inset-0 rounded-md",
-                        "ring-blue-400 focus:z-10 focus:outline-none focus:ring-2",
-                      )}
-                    />
-                  </li>
-                ))}
-              </ul>
-            </Tab.Panel>
-          ))}
-        </Tab.Panels>
-      </Tab.Group>
+        </TabsList>
+        {Object.entries(categories).map(([category, items]) => (
+          <TabsContent key={category} value={category}>
+            <Card>
+              <CardHeader>
+                <CardTitle>{category}</CardTitle>
+                <CardDescription>
+                  Key information about our approach and objectives
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3">
+                  {items.map((item) => (
+                    <li key={item.id} className="flex items-start space-x-3">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-sm text-muted-foreground leading-relaxed">
+                        {item.title}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          </TabsContent>
+        ))}
+      </Tabs>
     </div>
   );
 }

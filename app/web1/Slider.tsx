@@ -119,9 +119,9 @@ function Slider() {
   }, [currentSlide]);
 
   return (
-    <div className="min-h-screen bg-gray-200 rounded-2xl py-16 font-sans">
-      <h2 className="mx-auto mb-20 max-w-[800px] text-center text-6xl font-semibold text-gray-1000">
-        Bộ sưu tập sản phẩm thiết bị và phần mềm của Apple.
+    <div className="bg-muted rounded-2xl py-12 px-6">
+      <h2 className="mx-auto mb-16 max-w-[800px] text-center text-4xl md:text-6xl font-semibold text-foreground">
+        Collection of Apple devices and software products.
       </h2>
 
       <div className="h-[500px] overflow-hidden">
@@ -137,7 +137,7 @@ function Slider() {
               className="mr-5 shrink-0 snap-start snap-always last:mr-0"
               key={slide.title}
             >
-              <div className="slide-center relative flex h-full w-[400px] flex-col rounded-2xl bg-white">
+              <div className="slide-center relative flex h-full w-[400px] flex-col rounded-2xl bg-card border border-border shadow-lg">
                 <div
                   className={clsx(
                     "flex h-full justify-center",
@@ -151,7 +151,7 @@ function Slider() {
                     height={slide.imageHeight}
                   />
                 </div>
-                <h3 className="mt-auto p-6 text-2xl font-semibold text-gray-1000">
+                <h3 className="mt-auto p-6 text-2xl font-semibold text-foreground">
                   {slide.title}
                 </h3>
               </div>
@@ -159,22 +159,22 @@ function Slider() {
           ))}
         </ul>
       </div>
-      <div className="mt-4 flex justify-center">
+      <div className="mt-8 flex justify-center">
         <button
           disabled={currentSlide === 0}
           onClick={() => goToPreviousSlide()}
-          className="mr-2 flex h-8 w-8 items-center justify-center rounded-full border-2 border-black disabled:border-gray-400 disabled:text-gray-400"
+          className="mr-2 flex h-10 w-10 items-center justify-center rounded-full border-2 border-border bg-background text-foreground hover:bg-accent hover:text-accent-foreground disabled:border-muted-foreground/30 disabled:text-muted-foreground/50 disabled:hover:bg-background disabled:hover:text-muted-foreground/50 transition-colors duration-200"
         >
           <span className="sr-only">Previous slide</span>
-          <Chevron className="h-3 w-3" />
+          <Chevron className="h-4 w-4" />
         </button>
         <button
           disabled={scrolledToEndOfSlider || currentSlide === slides.length}
           onClick={() => goToNextSlide()}
-          className="flex h-8  w-8 items-center justify-center rounded-full border-2 border-black disabled:border-gray-400 disabled:text-gray-400"
+          className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-border bg-background text-foreground hover:bg-accent hover:text-accent-foreground disabled:border-muted-foreground/30 disabled:text-muted-foreground/50 disabled:hover:bg-background disabled:hover:text-muted-foreground/50 transition-colors duration-200"
         >
           <span className="sr-only">Next slide</span>
-          <Chevron className="h-3 w-3 rotate-180" />
+          <Chevron className="h-4 w-4 rotate-180" />
         </button>
       </div>
     </div>

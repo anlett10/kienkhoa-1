@@ -3,17 +3,21 @@ import { ProductRating } from "@/ui/ProductRating";
 
 export const ProductReviewCard = ({ review }: { review: Review }) => {
   return (
-    <div className="space-y-4">
-      <div className="space-y-2">
-        <div className="flex items-center space-x-2">
-          <div className="h-6 w-6 rounded-full bg-gray-700" />
-          <div className="text-sm text-white">{review.name}</div>
+    <div className="space-y-4 p-6 rounded-xl bg-card/50 dark:bg-card border border-border/50 dark:border-border hover:border-primary/50 transition-all duration-200">
+      <div className="space-y-3">
+        <div className="flex items-center space-x-3">
+          <div className="h-8 w-8 rounded-full bg-muted flex items-center justify-center">
+            <span className="text-sm font-semibold text-foreground">
+              {review.name.charAt(0).toUpperCase()}
+            </span>
+          </div>
+          <div className="text-sm font-medium text-foreground">{review.name}</div>
         </div>
 
         {review.rating ? <ProductRating rating={review.rating} /> : null}
       </div>
 
-      <div className="text-xs text-gray-400">{review.text}</div>
+      <div className="text-sm text-muted-foreground leading-relaxed">{review.text}</div>
     </div>
   );
 };

@@ -10,8 +10,8 @@ export const ProductSplitPayments = ({ price }: { price: Dinero<number> }) => {
   const [perMonth] = allocate(price, [1, 2]);
   return (
     <div className="text-sm text-gray-400">
-      Hoặc <ProductCurrencySymbol dinero={price} />
-      {toUnit(perMonth, { digits: 0, round: up })}/tháng trong 3 tháng
+      Or <ProductCurrencySymbol dinero={price} />
+      {toUnit(perMonth, { digits: 0, round: up })}/month in 3 months
     </div>
   );
 };

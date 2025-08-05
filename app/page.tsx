@@ -12,70 +12,150 @@ import {
 
 export default function Homepage() {
   return (
-    <div className="overflow-hidden">
-      <Container className=" py-[6.4rem]">
+    <div className="overflow-hidden bg-page-gradient">
+      {/* Hero Section */}
+      <Container className="py-[6.4rem]">
         <Hero>
-          <HeroTitle className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-            Kiến Khoa xây ứng dụng
-            <br className="hidden md:block" /> phù hợp với Doanh nghiệp
-          </HeroTitle>
-          <HeroSubtitle className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-            Dùng các giải pháp phần mềm của chúng tôi
-            <br className="hidden md:block" /> giúp khách hàng Doanh nghiệp kinh
-            doanh hiệu quả hơn.
-          </HeroSubtitle>
-          <Button
-            className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]"
-            href="/about"
-            variant="primary"
-            size="large"
-          >
-            Tìm hiểu{" "}
-            <IconWrapper>
-              <ChevronIcon />
-            </IconWrapper>
-          </Button>
+          <div className="space-y-8">
+            <div className="space-y-8">
+              <HeroTitle className="!text-3xl md:!text-6xl font-bold">
+                Kien Khoa develops
+                <br className="hidden md:block" /> SaaS products and Startup projects
+              </HeroTitle>
+              <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary/60 mx-auto rounded-full"></div>
+            </div>
+            <HeroSubtitle className="mb-16 text-base md:text-lg max-w-3xl mx-auto text-muted-foreground leading-relaxed">
+              We build SaaS products and provide consulting for businesses using proven, scalable technology.
+            </HeroSubtitle>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button
+                className="group hover:scale-105 transition-transform duration-200"
+                href="/about"
+                variant="primary"
+                size="large"
+              >
+                Learn More{" "}
+                <IconWrapper>
+                  <ChevronIcon />
+                </IconWrapper>
+              </Button>
+              <Button
+                className="group hover:scale-105 transition-transform duration-200"
+                href="/web1"
+                variant="secondary"
+                size="large"
+              >
+                View Demo{" "}
+                <IconWrapper>→</IconWrapper>
+              </Button>
+            </div>
+          </div>
           <HeroImage />
         </Hero>
+      </Container>
 
-        <header className="py-16 sm:text-center">
-          <h1 className="mb-4 mt-12 text-3xl font-extrabold tracking-tight sm:text-4xl">
-            Phần mềm thích ứng với mô hình Kinh doanh
-          </h1>
-          <p className="text-lg">
-            Sử dụng các công cụ, giải pháp được thiết kế tối ưu cho việc quản lý
-            vận hành của Doanh nghiệp
-          </p>
-          <div className="mt-8 flex gap-x-4 sm:justify-center">
-            <Button
-              className="translate-y-[-1rem] animate-fade-in opacity-0"
-              href="/web1"
-              variant="secondary"
-              size="medium"
-            >
-              Demo website quản lý bán hàng <IconWrapper>→</IconWrapper>
-            </Button>
+      {/* Features Section */}
+      <Container className="py-20">
+        <div className="text-center space-y-8 mb-16">
+          <div className="space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Custom software built to fit the business needs.
+            </h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary/60 mx-auto rounded-full"></div>
           </div>
-        </header>
-        <div className="grid grid-cols-1 gap-y-20 md:grid-cols-2 md:gap-x-12 md:gap-y-12">
-          {features.map((feature) => (
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Streamlining your business operations with tailored tools and expert solutions.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-12 md:gap-y-16">
+          {features.map((feature, index) => (
             <div
               key={feature.name}
-              className="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
+              className="group relative flex flex-col gap-6 p-8 rounded-xl hover:bg-muted/30 transition-all duration-300 hover:shadow-lg border border-transparent hover:border-border/50"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500 text-white sm:shrink-0">
+              <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                 <feature.icon className="h-8 w-8" aria-hidden="true" />
               </div>
-              <div className="sm:min-w-0 sm:flex-1">
-                <p className="text-lg font-semibold leading-8">
+              <div className="space-y-3">
+                <h3 className="text-xl font-semibold leading-8 text-foreground">
                   {feature.name}
-                </p>
-                <p className="mt-2 text-sm leading-7 text-mauve8">
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
                   {feature.description}
                 </p>
               </div>
             </div>
           ))}
+        </div>
+      </Container>
+
+      {/* Statistics Section */}
+      <Container className="py-20">
+        <div className="text-center space-y-8 mb-16">
+          <div className="space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Our Achievements
+            </h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary/60 mx-auto rounded-full"></div>
+          </div>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Impressive numbers reflecting the experience and reputation of the Kien Khoa team
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {statistics.map((stat, index) => (
+            <div
+              key={stat.label}
+              className="text-center group hover:scale-105 transition-transform duration-300"
+            >
+              <div className="mb-4">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                  {stat.value}
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  {stat.label}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Container>
+
+      {/* Call to Action */}
+      <Container className="py-20">
+        <div className="text-center space-y-6">
+          <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-8 border border-primary/20">
+            <h3 className="text-2xl font-semibold text-foreground mb-4">
+              Ready to start your project?
+            </h3>
+            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+              Let's discuss how we can help bring your vision to life with our expertise and innovative solutions.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                className="group hover:scale-105 transition-transform duration-200"
+                href="/products"
+                variant="primary"
+                size="large"
+              >
+                View Projects{" "}
+                <IconWrapper>
+                  <ChevronIcon />
+                </IconWrapper>
+              </Button>
+              <Button
+                className="group hover:scale-105 transition-transform duration-200"
+                href="/about"
+                variant="secondary"
+                size="large"
+              >
+                Contact Us{" "}
+                <IconWrapper>→</IconWrapper>
+              </Button>
+            </div>
+          </div>
         </div>
       </Container>
     </div>
@@ -84,26 +164,34 @@ export default function Homepage() {
 
 const features = [
   {
-    name: "Thiết kế websites",
+    name: "Web Development",
     description:
-      "Websites được các Doanh nghiệp, tổ chức dùng để giới thiệu đến khách hàng, đối tác như là cổng thông tin chính thức, nâng cao độ tin cậy",
+      "Modern web applications built with cutting-edge technologies for optimal performance and user experience.",
     icon: GlobeAltIcon,
   },
   {
-    name: "Ứng dụng web - mobile",
+    name: "Mobile Development",
     description:
-      "Thiết kế và xây các ứng dụng web mobile tương thích với mô hình Kinh doanh của Doanh nghiệp",
+      "Native mobile applications for iOS and Android with modern UI/UX and high performance.",
     icon: DevicePhoneMobileIcon,
   },
   {
-    name: "Gia công phần mềm",
-    description: "Dịch vụ gia công tư vấn phát triển phần mềm",
+    name: "SaaS Solutions",
+    description:
+      "Scalable software-as-a-service products designed for business efficiency and growth.",
     icon: CodeBracketIcon,
   },
   {
-    name: "Thử nghiệm Blockchain",
+    name: "Business Solutions",
     description:
-      "Blockchain vẫn còn mới đang quá trình thử nghiệm để tìm ra mô hình ứng dụng phù hợp",
+      "Comprehensive business management systems tailored to your specific operational needs.",
     icon: Squares2X2Icon,
   },
+];
+
+const statistics = [
+  { value: "20+", label: "Completed Projects" },
+  { value: "10+", label: "Satisfied Clients" },
+  { value: "10+", label: "Years Experience" },
+  { value: "99%", label: "Success Rate" },
 ];

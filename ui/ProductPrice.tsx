@@ -41,10 +41,10 @@ export const ProductPrice = ({
 
   return (
     <div className="flex">
-      <div className="text-sm leading-snug text-white">
+      <div className="text-sm leading-snug text-foreground">
         <ProductCurrencySymbol dinero={price} />
       </div>
-      <div className="text-lg font-bold leading-snug text-white">
+      <div className="text-lg font-bold leading-snug text-foreground">
         {toUnit(price)}
       </div>
     </div>

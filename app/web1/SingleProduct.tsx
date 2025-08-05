@@ -12,22 +12,22 @@ export const SingleProduct = ({
   cartCount: string;
 }) => {
   return (
-    <div className="grid grid-cols-4 gap-6">
-      <div className="col-span-full lg:col-span-1">
-        <div className="space-y-2">
+    <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
+      <div className="lg:col-span-1">
+        <div className="space-y-4">
           <Image
             src={`/${product.image}`}
-            className="hidden rounded-lg grayscale lg:block"
+            className="hidden rounded-xl grayscale lg:block shadow-lg"
             alt={product.name}
             height={400}
             width={400}
           />
 
-          <div className="flex gap-x-2">
+          <div className="flex gap-3">
             <div className="w-1/3">
               <Image
                 src={`/${product.image}`}
-                className="rounded-lg grayscale"
+                className="rounded-lg grayscale hover:grayscale-0 transition-all duration-300"
                 alt={product.name}
                 height={180}
                 width={180}
@@ -36,7 +36,7 @@ export const SingleProduct = ({
             <div className="w-1/3">
               <Image
                 src={`/${product.image}`}
-                className="rounded-lg grayscale"
+                className="rounded-lg grayscale hover:grayscale-0 transition-all duration-300"
                 alt={product.name}
                 height={180}
                 width={180}
@@ -45,7 +45,7 @@ export const SingleProduct = ({
             <div className="w-1/3">
               <Image
                 src={`/${product.image}`}
-                className="rounded-lg grayscale"
+                className="rounded-lg grayscale hover:grayscale-0 transition-all duration-300"
                 alt={product.name}
                 height={180}
                 width={180}
@@ -55,23 +55,30 @@ export const SingleProduct = ({
         </div>
       </div>
 
-      <div className="col-span-full space-y-4 lg:col-span-2">
-        <div className="truncate text-xl font-medium text-white lg:text-2xl">
-          {product.name}
+      <div className="lg:col-span-2 space-y-6">
+        <div className="space-y-4">
+          <h1 className="text-2xl lg:text-3xl font-semibold text-foreground">
+            {product.name}
+          </h1>
+
+          <ProductRating rating={product.rating} />
         </div>
 
-        <ProductRating rating={product.rating} />
-
-        <div className="space-y-4 text-sm text-gray-200">
-          <p>{product.description}</p>
+        <div className="space-y-4">
+          <h2 className="text-lg font-medium text-foreground">Product Description</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            {product.description}
+          </p>
         </div>
       </div>
 
-      <div className="col-span-full lg:col-span-1">
-        <Suspense fallback={<PricingSkeleton />}>
-          {/* @ts-expect-error Async Server Component */}
-          <Pricing product={product} cartCount={cartCount} />
-        </Suspense>
+      <div className="lg:col-span-1">
+        <div className="sticky top-8">
+          <Suspense fallback={<PricingSkeleton />}>
+            {/* @ts-expect-error Async Server Component */}
+            <Pricing product={product} cartCount={cartCount} />
+          </Suspense>
+        </div>
       </div>
     </div>
   );

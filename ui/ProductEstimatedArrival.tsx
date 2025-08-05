@@ -12,13 +12,13 @@ export const ProductEstimatedArrival = ({
   });
 
   return (
-    <div className="text-sm text-gray-300">
-      Nhận hàng{" "}
-      <strong className="font-bold text-gray-100">
-        {isTomorrow(date) ? "ngày mai, " : null}
+    <div className="text-sm text-muted-foreground">
+      Estimated arrival{" "}
+      <strong className="font-bold text-foreground">
+        {isTomorrow(date) ? "tomorrow, " : null}
         {format(date, "MMM d")}
       </strong>
-      {hasDeliveryTime ? <> trước 5pm</> : null}
+      {hasDeliveryTime ? <> before 5pm</> : null}
     </div>
   );
 };
