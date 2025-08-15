@@ -7,6 +7,7 @@ const productData1 = {
   client: "Bosware LLC - Australia",
   sector: "Startup",
   year: "2019 - 2022",
+  project_link: "https://www.kienkhoa.com/products/1/#",
   featured_image: "/product1-main.png",
   cover_image: "/eniko-kis-KsLPTsYaqIQ-unsplash.jpg",
   is_featured: true,
@@ -53,13 +54,14 @@ const productData2 = {
   client: "Indie devs, Startups",
   sector: "Developer Tools",
   year: "2024 - 2025",
+  project_link: "https://www.tsstarter.dev/",
   featured_image: "/product2-f1.png",
   cover_image: "/guillaume-coupy-6HuoHgK7FN8-unsplash.jpg",
   is_featured: true,
   body: [
-    "A modern, production-ready starter template built with TanStack Router, Triplit, Better Auth, and shadcn/ui.",
+    "A modern, production-ready starter template built with TanStack Router, Drizzle, Better Auth, and shadcn/ui.",
     "This comprehensive template provides everything developers need to build modern web applications with TypeScript, including authentication, real-time sync, AI integration, and a beautiful UI.",
-    "The template includes user authentication with OAuth providers and email verification, real-time data synchronization with Triplit, AI chat integration with OpenAI/Anthropic, and a modern UI built with shadcn/ui components.",
+    "The template includes user authentication with OAuth providers and email verification, real-time data synchronization with Drizzle, AI chat integration with OpenAI/Anthropic, and a modern UI built with shadcn/ui components.",
     "Built with React 19, TanStack Router, and TanStack Start for the backend, it provides a complete full-stack solution with real-time database sync, comprehensive testing setup, and production-ready deployment configurations.",
     "The template is designed for rapid development with hot reload, error boundaries, loading states, and comprehensive developer tooling including ESLint, Prettier, and testing with Vitest and Playwright."
   ],
@@ -79,7 +81,7 @@ const productData2 = {
       title: "Real-time Sync & AI Integration",
       image: "/product2-f2.png",
       text: [
-        "Real-time data synchronization with Triplit for instant updates across all connected clients.",
+        "Real-time data synchronization with Drizzle for instant updates across all connected clients.",
         "AI chat integration with OpenAI/Anthropic including conversation history and context management.",
         "Full CRUD task management with real-time updates and collaborative features."
       ]
@@ -91,7 +93,7 @@ const productData2 = {
     "shadcn/ui",
     "TanStack Start",
     "ORPC",
-    "Triplit",
+    "Drizzle",
     "Better Auth",
     "AI SDK",
     "Resend",
@@ -118,6 +120,7 @@ export default async function ProductDetail({ params }: { params: Promise<{ id: 
       client: "Client Name",
       sector: "Sector",
       year: "2024",
+      project_link: null,
       featured_image: "/alexander-andrews-brAkTCdnhW8-unsplash.jpg",
       cover_image: "/eniko-kis-KsLPTsYaqIQ-unsplash.jpg",
       is_featured: false,
@@ -152,6 +155,25 @@ export default async function ProductDetail({ params }: { params: Promise<{ id: 
                 <div>
                   <h3 className="text-lg font-semibold text-foreground">Client</h3>
                   <p className="text-muted-foreground">{product.client}</p>
+                </div>
+                
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground">Project Link</h3>
+                  {product.project_link ? (
+                    <a 
+                      href={product.project_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-primary/80 transition-colors duration-200 inline-flex items-center gap-2"
+                    >
+                      <span>View Project</span>
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  ) : (
+                    <p className="text-muted-foreground">N/A</p>
+                  )}
                 </div>
                 
                 {product.is_featured && (

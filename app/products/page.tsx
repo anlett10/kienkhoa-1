@@ -12,7 +12,7 @@ const products = [
   },
   {
     name: "TypeScript Fullstack Starter",
-    category: "3003Product Starter",
+    category: "Product Starter",
     description:
       "A modern, production-ready starter template built with TanStack Router, Triplit, Better Auth, and shadcn/ui. Complete full-stack solution with real-time sync, AI integration, and comprehensive developer tooling.",
     price: "",
